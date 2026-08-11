@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="title" content="Hierarchical Compositionality for An Assistive AI Agent - Tianyi Fu, Mohan Sridharan">
+  <meta name="description" content="An architecture that embeds hierarchical compositionality and simple heuristics so an assistive AI agent can resolve ambiguous human commands from limited interaction history.">
+  <meta name="keywords" content="command disambiguation, compositional representation, answer set programming, non-monotonic reasoning, assistive agents, human-agent interaction, user modeling">
+  <meta name="author" content="Tianyi Fu, Mohan Sridharan">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="University of Edinburgh">
+  <meta property="og:title" content="Hierarchical Compositionality for An Assistive AI Agent">
+  <meta property="og:description" content="An architecture that embeds hierarchical compositionality and simple heuristics so an assistive AI agent can resolve ambiguous human commands from limited interaction history.">
+  <meta property="og:url" content="https://tianyi-fu.github.io/HCAA/">
+  <meta property="og:image" content="https://tianyi-fu.github.io/HCAA/static/images/fig_motivating.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Hierarchical Compositionality for An Assistive AI Agent - Preview">
+  <meta property="article:author" content="Tianyi Fu">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="command disambiguation">
+  <meta property="article:tag" content="compositional representation">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hierarchical Compositionality for An Assistive AI Agent">
+  <meta name="twitter:description" content="An architecture that embeds hierarchical compositionality and simple heuristics so an assistive AI agent can resolve ambiguous human commands from limited interaction history.">
+  <meta name="twitter:image" content="https://tianyi-fu.github.io/HCAA/static/images/fig_motivating.png">
+  <meta name="twitter:image:alt" content="Hierarchical Compositionality for An Assistive AI Agent - Preview">
+
+  <meta name="citation_title" content="Hierarchical Compositionality for An Assistive AI Agent">
+  <meta name="citation_author" content="Fu, Tianyi">
+  <meta name="citation_author" content="Sridharan, Mohan">
+  <meta name="citation_arxiv_id" content="2608.10330">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2608.10330">
+  <meta name="citation_publication_date" content="2026/08/11">
+  
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <title>Hierarchical Compositionality for An Assistive AI Agent</title>
+  
+  <link rel="icon" type="image/png" href="static/images/favicon.png?v=2">
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico?v=2">
+  <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png?v=2">
+  
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Hierarchical Compositionality for An Assistive AI Agent",
+    "description": "An architecture that embeds hierarchical compositionality and simple heuristics so an assistive AI agent can resolve ambiguous human commands from limited interaction history.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Tianyi Fu",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Institute of Perception, Action, and Behaviour, School of Informatics, University of Edinburgh"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Mohan Sridharan",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Institute of Perception, Action, and Behaviour, School of Informatics, University of Edinburgh"
+        }
+      }
+    ],
+    "url": "https://tianyi-fu.github.io/HCAA/",
+    "image": "https://tianyi-fu.github.io/HCAA/static/images/fig_motivating.png",
+    "keywords": ["command disambiguation", "compositional representation", "answer set programming", "non-monotonic reasoning", "assistive agents"],
+    "abstract": "AI agents are increasingly being developed to assist humans in various applications, and Large Language Models and other deep network architectures are considered to be state of the art for such agents. These methods are impressive stochastic predictors, but they are resource-hungry, opaque, and known to make arbitrary decisions in novel situations due to the narrow set of underlying representation and processing choices. Our work seeks to explore the design of architectures for such AI agents based on core principles that can be traced back to the early pioneers of AI but are not fully utilized in modern AI methods. We do so in this paper in the context of the core problem of AI agents addressing ambiguity in the objects being referred to by the human participants. Humans address such ambiguity by heuristically leveraging compositional knowledge of domain context and the preferences of the other human participants. Drawing inspiration from this observation, we describe an architecture that embeds the principle of hierarchical compositionality and uses simple heuristics to achieve the desired disambiguation. Specifically, domain objects are represented in terms of primitive attributes drawn from human-validated semantic feature norms, and a hierarchical combination of attributes and concepts automatically identified from a limited observed history of interactions of an assistive agent with specific users. The assistive agent then achieves the desired disambiguation by reasoning with knowledge of this compositional hierarchy; axioms governing domain dynamics; and models of semantic compatibility, session salience, and user-specific thematic preference, requesting human clarification when necessary. Experiments show that our approach consistently outperforms state of the art data-driven baselines, supporting adaptation to specific user profiles.",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://tianyi-fu.github.io/HCAA/"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Command disambiguation"
+      },
+      {
+        "@type": "Thing", 
+        "name": "Answer set programming"
+      }
+    ]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "University of Edinburgh",
+    "url": "https://www.ed.ac.uk",
+    "logo": "https://tianyi-fu.github.io/HCAA/static/images/favicon.png",
+    "sameAs": [
+      "https://github.com/Tianyi-Fu"
+    ]
+  }
+  </script>
+  <style>
+    .work-item .work-links { display:flex; gap:1rem; flex-wrap:wrap; margin-top:.55rem; }
+    .work-item .work-links a {
+      font-size:.85rem; font-weight:600; text-decoration:none; color:#3273dc;
+      display:inline-flex; align-items:center; gap:.35rem;
+    }
+    .work-item .work-links a:hover { text-decoration:underline; }
+    .work-item .work-links i { font-size:.8rem; }
+  </style>
+</head>
+
+<body>
+
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Work">
+      <i class="fas fa-flask"></i>
+      More Work
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Work</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <div class="work-item">
+          <div class="work-info">
+            <h5>Combining LLM, Non-monotonic Logical Reasoning, and Human-in-the-loop Feedback in an Assistive AI Agent</h5>
+            <p>An LLM proposes abstract predictions of upcoming tasks; knowledge-based reasoning and human feedback turn them into reliable action plans.</p>
+            <span class="work-venue">IEEE RO-MAN 2025</span>
+            <div class="work-links">
+              <a href="https://brianej.github.io/igfmrdskaa.github.io/" target="_blank" rel="noopener">
+                <i class="fas fa-globe"></i> Project page
+              </a>
+              <a href="https://ieeexplore.ieee.org/document/11217618/" target="_blank" rel="noopener">
+                <i class="fas fa-file-lines"></i> Paper (IEEE&nbsp;Xplore)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Hierarchical Compositionality for An Assistive AI Agent</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <span style="color:#2563eb;font-weight:600">Tianyi Fu</span><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://homepages.inf.ed.ac.uk/msridhar/" target="_blank">Mohan Sridharan</a><sup>1</sup></span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Institute of Perception, Action, and Behaviour, School of Informatics,<br>University of Edinburgh</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://arxiv.org/pdf/2608.10330" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                    <a href="https://github.com/Tianyi-Fu/HCAA" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://youtu.be/p79n0Z4hmT8" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2608.10330" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/fig_motivating.png" alt="An assistive agent resolving an ambiguous request."/>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            AI agents are increasingly being developed to assist humans in various applications, and Large Language
+            Models and other deep network architectures are considered to be state of the art for such agents. These
+            methods are impressive stochastic predictors, but they are resource-hungry, opaque, and known to make
+            arbitrary decisions in novel situations due to the narrow set of underlying representation and processing
+            choices. Our work seeks to explore the design of architectures for such AI agents based on core principles
+            that can be traced back to the early pioneers of AI but are not fully utilized in modern AI methods. We do
+            so in this paper in the context of the core problem of AI agents addressing ambiguity in the objects being
+            referred to by the human participants. Humans address such ambiguity by heuristically leveraging
+            compositional knowledge of domain context and the preferences of the other human participants. Drawing
+            inspiration from this observation, we describe an architecture that embeds the principle of hierarchical
+            compositionality and uses simple heuristics to achieve the desired disambiguation. Specifically, domain
+            objects are represented in terms of primitive attributes drawn from human-validated semantic feature norms,
+            and a hierarchical combination of attributes and concepts automatically identified from a limited observed
+            history of interactions of an assistive agent with specific users. The assistive agent then achieves the
+            desired disambiguation by reasoning with knowledge of this compositional hierarchy; axioms governing domain
+            dynamics; and models of semantic compatibility, session salience, and user-specific thematic preference,
+            requesting human clarification when necessary. Experiments show that our approach consistently outperforms
+            state of the art data-driven baselines, supporting adaptation to specific user profiles.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/images/framework_2.png" alt="Three-stage architecture"/>
+          <h2 class="subtitle has-text-centered">
+            <b>Three-stage framework.</b> ASP-based feasibility filtering yields the candidate set; the remaining
+            candidates are scored by fusing semantic similarity, session salience and user-specific thematic
+            preference; the agent then commits or asks for clarification, and the interaction updates the user history.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/compositional_hierarchy.png" alt="Three-layered compositional hierarchy"/>
+          <h2 class="subtitle has-text-centered">
+            <b>Three-layered representation.</b> L<sub>0</sub> atomic attributes from human-validated feature norms and
+            L<sub>1</sub> mined concepts are user-independent; L<sub>2</sub> captures user-specific workflow patterns,
+            here the pattern c<sub>93</sub> &rarr; c<sub>21</sub>: this user switches on light-emitting entities after
+            handling printed reading material.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/p79n0Z4hmT8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@misc{fu2026hierarchicalcompositionalityassistiveai,
+      title={Hierarchical Compositionality for An Assistive AI Agent},
+      author={Tianyi Fu and Mohan Sridharan},
+      year={2026},
+      eprint={2608.10330},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2608.10330},
+}</code></pre>
+    </div>
+</section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+  </body>
+  </html>

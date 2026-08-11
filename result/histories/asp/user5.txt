@@ -1,0 +1,189 @@
+[ % 1 lunch-read ; KB: per-clip; dishwasher=
+on(table, plate) |
+open(refrigerator) |
+inside(microwave_oven, steak) |
+on(table, apple) |
+closed(refrigerator) |
+heated(steak) |
+on(table, steak) |
+has(user, basket) |
+on(couch, newspaper) |
+has(user, glass) |
+on(table, cookie) |
+on(couch, pillow) |
+filled(cup, kettle) |
+has(user, cup) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+]
+
+[ % 2 work-relax ; KB: per-clip; dishwasher=
+on(table, computer) |
+has(user, mug) |
+on(couch, blanket) |
+has(user, pizza) |
+on(table, plate) |
+on(table, cookie) |
+on(table, bread) |
+on(table, jar) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+on(couch, rug) |
+]
+
+[ % 3 tv-read-relax ; KB: per-clip; dishwasher=
+switched_on(television) |
+has(user, bowl) |
+on(couch, newspaper) |
+has(user, glass) |
+on(couch, blanket) |
+has(user, pizza) |
+on(table, plate) |
+on(table, cookie) |
+on(table, cake) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+]
+
+[ % 4 lunch-tv ; KB: per-clip; dishwasher=
+on(table, plate) |
+open(refrigerator) |
+inside(microwave_oven, steak) |
+on(table, banana) |
+closed(refrigerator) |
+heated(steak) |
+on(table, steak) |
+has(user, basket) |
+switched_on(television) |
+has(user, bowl) |
+on(table, cake) |
+on(couch, rug) |
+filled(cup, kettle) |
+has(user, cup) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+]
+
+[ % 5 work-read ; KB: per-clip; dishwasher=
+on(table, computer) |
+has(user, mug) |
+on(couch, newspaper) |
+has(user, glass) |
+on(table, plate) |
+on(table, cake) |
+on(table, muffin) |
+on(table, bottle) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+on(couch, pillow) |
+]
+
+[ % 6 tv-relax-read ; KB: per-clip; dishwasher=
+switched_on(television) |
+has(user, bowl) |
+on(couch, blanket) |
+has(user, pizza) |
+on(couch, newspaper) |
+has(user, glass) |
+on(table, plate) |
+on(table, bread) |
+on(table, bottle) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+]
+
+[ % 7 supper-relax ; KB: per-clip; dishwasher=
+on(table, plate) |
+open(refrigerator) |
+inside(microwave_oven, steak) |
+on(table, orange) |
+closed(refrigerator) |
+heated(steak) |
+on(table, steak) |
+has(user, basket) |
+on(couch, blanket) |
+has(user, pizza) |
+on(table, muffin) |
+on(couch, pillow) |
+filled(cup, kettle) |
+has(user, cup) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+]
+
+[ % 8 work-tv ; KB: per-clip; dishwasher=
+on(table, computer) |
+has(user, mug) |
+switched_on(television) |
+has(user, bowl) |
+on(table, plate) |
+on(table, bread) |
+on(table, jar) |
+on(table, cookie) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+on(couch, rug) |
+]
+
+[ % 9 relax-read ; KB: per-clip; dishwasher=
+on(couch, blanket) |
+has(user, pizza) |
+on(couch, newspaper) |
+has(user, glass) |
+on(table, plate) |
+on(table, muffin) |
+on(table, cake) |
+on(table, bread) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+on(couch, pillow) |
+]
+
+[ % 10 tv-work-night ; KB: per-clip; dishwasher=
+switched_on(television) |
+has(user, bowl) |
+on(table, computer) |
+has(user, mug) |
+on(table, plate) |
+on(table, jar) |
+on(table, bottle) |
+on(table, muffin) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+on(couch, rug) |
+]

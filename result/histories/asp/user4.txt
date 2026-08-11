@@ -1,0 +1,189 @@
+[ % 1 lunch-read ; KB: per-clip; dishwasher=
+on(table, plate) |
+open(refrigerator) |
+inside(microwave_oven, chicken) |
+on(table, apple) |
+closed(refrigerator) |
+heated(chicken) |
+on(table, chicken) |
+has(user, bread) |
+on(couch, book) |
+has(user, pencil) |
+on(table, cookie) |
+on(couch, pillow) |
+filled(mug, kettle) |
+has(user, mug) |
+inside(dishwasher, plate) |
+inside(dishwasher, mug) |
+]
+
+[ % 2 work-relax ; KB: per-clip; dishwasher=
+on(table, computer) |
+has(user, newspaper) |
+on(couch, blanket) |
+has(user, cake) |
+on(table, plate) |
+on(table, cookie) |
+on(table, muffin) |
+filled(mug, kettle) |
+has(user, mug) |
+on(table, bowl) |
+on(table, pizza) |
+on(couch, rug) |
+on(couch, pillow) |
+inside(dishwasher, plate) |
+inside(dishwasher, mug) |
+inside(dishwasher, bowl) |
+]
+
+[ % 3 tv-read-relax ; KB: per-clip; dishwasher=
+switched_on(television) |
+has(user, phone) |
+on(couch, book) |
+has(user, pencil) |
+on(couch, blanket) |
+has(user, cake) |
+on(table, plate) |
+on(table, cookie) |
+on(table, muffin) |
+filled(mug, kettle) |
+has(user, mug) |
+on(table, bowl) |
+on(table, pizza) |
+inside(dishwasher, plate) |
+inside(dishwasher, mug) |
+inside(dishwasher, bowl) |
+]
+
+[ % 4 lunch-tv ; KB: per-clip; dishwasher=
+on(table, plate) |
+open(refrigerator) |
+inside(microwave_oven, chicken) |
+on(table, banana) |
+closed(refrigerator) |
+heated(chicken) |
+on(table, chicken) |
+has(user, bread) |
+switched_on(television) |
+has(user, phone) |
+on(table, muffin) |
+on(couch, rug) |
+filled(mug, kettle) |
+has(user, mug) |
+inside(dishwasher, plate) |
+inside(dishwasher, mug) |
+]
+
+[ % 5 work-read ; KB: per-clip; dishwasher=
+on(table, computer) |
+has(user, newspaper) |
+on(couch, book) |
+has(user, pencil) |
+on(table, plate) |
+on(table, muffin) |
+on(table, pizza) |
+filled(mug, kettle) |
+has(user, mug) |
+on(table, bowl) |
+on(table, cookie) |
+on(couch, rug) |
+on(couch, curtain) |
+inside(dishwasher, plate) |
+inside(dishwasher, mug) |
+inside(dishwasher, bowl) |
+]
+
+[ % 6 tv-relax-read ; KB: per-clip; dishwasher=
+switched_on(television) |
+has(user, phone) |
+on(couch, blanket) |
+has(user, cake) |
+on(couch, book) |
+has(user, pencil) |
+on(table, plate) |
+on(table, muffin) |
+on(table, pizza) |
+filled(mug, kettle) |
+has(user, mug) |
+on(table, bowl) |
+on(table, cookie) |
+inside(dishwasher, plate) |
+inside(dishwasher, mug) |
+inside(dishwasher, bowl) |
+]
+
+[ % 7 supper-relax ; KB: per-clip; dishwasher=
+on(table, plate) |
+open(refrigerator) |
+inside(microwave_oven, chicken) |
+on(table, orange) |
+closed(refrigerator) |
+heated(chicken) |
+on(table, chicken) |
+has(user, bread) |
+on(couch, blanket) |
+has(user, cake) |
+on(table, pizza) |
+on(couch, pillow) |
+filled(mug, kettle) |
+has(user, mug) |
+inside(dishwasher, plate) |
+inside(dishwasher, mug) |
+]
+
+[ % 8 work-tv ; KB: per-clip; dishwasher=
+on(table, computer) |
+has(user, newspaper) |
+switched_on(television) |
+has(user, phone) |
+on(table, plate) |
+on(table, cookie) |
+on(table, pizza) |
+filled(mug, kettle) |
+has(user, mug) |
+on(table, bowl) |
+on(table, muffin) |
+on(couch, pillow) |
+on(couch, rug) |
+inside(dishwasher, plate) |
+inside(dishwasher, mug) |
+inside(dishwasher, bowl) |
+]
+
+[ % 9 relax-read ; KB: per-clip; dishwasher=
+on(couch, blanket) |
+has(user, cake) |
+on(couch, book) |
+has(user, pencil) |
+on(table, plate) |
+on(table, cookie) |
+on(table, muffin) |
+filled(mug, kettle) |
+has(user, mug) |
+on(table, bowl) |
+on(table, pizza) |
+on(couch, pillow) |
+on(couch, rug) |
+inside(dishwasher, plate) |
+inside(dishwasher, mug) |
+inside(dishwasher, bowl) |
+]
+
+[ % 10 tv-work-night ; KB: per-clip; dishwasher=
+switched_on(television) |
+has(user, phone) |
+on(table, computer) |
+has(user, newspaper) |
+on(table, plate) |
+on(table, muffin) |
+on(table, cookie) |
+filled(mug, kettle) |
+has(user, mug) |
+on(table, bowl) |
+on(table, pizza) |
+on(couch, pillow) |
+on(couch, rug) |
+inside(dishwasher, plate) |
+inside(dishwasher, mug) |
+inside(dishwasher, bowl) |
+]

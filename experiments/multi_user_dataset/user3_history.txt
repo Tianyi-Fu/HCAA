@@ -1,0 +1,189 @@
+[ % 1 breakfast-read ; KB: per-clip; dishwasher=fork,knife,spoon
+open(refrigerator)              | open the refrigerator
+inside(microwave_oven, salmon)  | put the salmon in the microwave
+closed(refrigerator)            | close the refrigerator
+heated(salmon)                  | heat the salmon
+on(table, plate)                | put the plate on the table
+on(plate, salmon)               | put the salmon on the plate
+has(user, towel)                | give me the towel
+on(couch, newspaper)            | put the newspaper on the couch
+has(user, candle)               | give me the candle
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, teapot)      | put the teapot in the dishwasher
+on(table, bowl)                 | put the bowl on the table
+on(table, bread)                | put the bread on the table
+on(couch, rug)                  | put the rug on the couch
+]
+
+[ % 2 work-relax ; KB: per-clip; dishwasher=knife,spoon,fork
+on(table, computer)             | put the computer on the table
+has(user, book)                 | give me the book
+on(couch, blanket)              | put the blanket on the couch
+has(user, muffin)               | give me the muffin
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+inside(dishwasher, teapot)      | put the teapot in the dishwasher
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+inside(dishwasher, cup)         | put the cup in the dishwasher
+on(table, glass)                | put the glass on the table
+on(table, cake)                 | put the cake on the table
+on(table, jar)                  | put the jar on the table
+on(table, vase)                 | put the vase on the table
+on(table, phone)                | put the phone on the table
+on(table, plant)                | put the plant on the table
+]
+
+[ % 3 tv-read-relax ; KB: per-clip; dishwasher=fork,knife,spoon
+switched_on(television)         | turn on the television
+has(user, pillow)               | give me the pillow
+on(couch, newspaper)            | put the newspaper on the couch
+has(user, candle)               | give me the candle
+on(couch, blanket)              | put the blanket on the couch
+has(user, muffin)               | give me the muffin
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+inside(dishwasher, teapot)      | put the teapot in the dishwasher
+on(table, bowl)                 | put the bowl on the table
+on(table, cookie)               | put the cookie on the table
+on(table, clock)                | put the clock on the table
+on(table, thermos)              | put the thermos on the table
+on(table, bottle)               | put the bottle on the table
+on(couch, rug)                  | put the rug on the couch
+on(table, pizza)                | put the pizza on the table
+]
+
+[ % 4 lunch-tv ; KB: per-clip; dishwasher=spoon,knife,fork
+open(refrigerator)              | open the refrigerator
+inside(microwave_oven, salmon)  | put the salmon in the microwave
+closed(refrigerator)            | close the refrigerator
+heated(salmon)                  | heat the salmon
+on(table, plate)                | put the plate on the table
+on(plate, salmon)               | put the salmon on the plate
+has(user, towel)                | give me the towel
+switched_on(television)         | turn on the television
+has(user, pillow)               | give me the pillow
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, teapot)      | put the teapot in the dishwasher
+on(table, mug)                  | put the mug on the table
+on(table, cake)                 | put the cake on the table
+on(table, clock)                | put the clock on the table
+]
+
+[ % 5 study-read ; KB: per-clip; dishwasher=fork,spoon,knife
+on(table, computer)             | put the computer on the table
+has(user, book)                 | give me the book
+on(couch, newspaper)            | put the newspaper on the couch
+has(user, candle)               | give me the candle
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+inside(dishwasher, teapot)      | put the teapot in the dishwasher
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+inside(dishwasher, cup)         | put the cup in the dishwasher
+on(table, bread)                | put the bread on the table
+on(table, jar)                  | put the jar on the table
+on(table, vase)                 | put the vase on the table
+on(table, plant)                | put the plant on the table
+on(table, cookie)               | put the cookie on the table
+on(table, bottle)               | put the bottle on the table
+]
+
+[ % 6 tv-relax-read ; KB: per-clip; dishwasher=fork,knife,spoon
+switched_on(television)         | turn on the television
+has(user, pillow)               | give me the pillow
+on(couch, blanket)              | put the blanket on the couch
+has(user, muffin)               | give me the muffin
+on(couch, newspaper)            | put the newspaper on the couch
+has(user, candle)               | give me the candle
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+inside(dishwasher, teapot)      | put the teapot in the dishwasher
+on(table, cake)                 | put the cake on the table
+on(table, glass)                | put the glass on the table
+on(table, thermos)              | put the thermos on the table
+on(table, clock)                | put the clock on the table
+on(table, mug)                  | put the mug on the table
+on(couch, rug)                  | put the rug on the couch
+on(table, pizza)                | put the pizza on the table
+]
+
+[ % 7 supper-relax ; KB: per-clip; dishwasher=fork,knife,spoon
+open(refrigerator)              | open the refrigerator
+inside(microwave_oven, salmon)  | put the salmon in the microwave
+closed(refrigerator)            | close the refrigerator
+heated(salmon)                  | heat the salmon
+on(table, plate)                | put the plate on the table
+on(plate, salmon)               | put the salmon on the plate
+has(user, towel)                | give me the towel
+on(couch, blanket)              | put the blanket on the couch
+has(user, muffin)               | give me the muffin
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, teapot)      | put the teapot in the dishwasher
+on(table, bowl)                 | put the bowl on the table
+on(table, bread)                | put the bread on the table
+on(table, vase)                 | put the vase on the table
+]
+
+[ % 8 work-tv ; KB: per-clip; dishwasher=knife,spoon,fork
+on(table, computer)             | put the computer on the table
+has(user, book)                 | give me the book
+switched_on(television)         | turn on the television
+has(user, pillow)               | give me the pillow
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+inside(dishwasher, teapot)      | put the teapot in the dishwasher
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+inside(dishwasher, cup)         | put the cup in the dishwasher
+on(table, glass)                | put the glass on the table
+on(table, jar)                  | put the jar on the table
+on(table, phone)                | put the phone on the table
+on(table, clock)                | put the clock on the table
+on(table, cookie)               | put the cookie on the table
+on(table, mug)                  | put the mug on the table
+]
+
+[ % 9 relax-read ; KB: per-clip; dishwasher=fork,knife,spoon
+on(couch, blanket)              | put the blanket on the couch
+has(user, muffin)               | give me the muffin
+on(couch, newspaper)            | put the newspaper on the couch
+has(user, candle)               | give me the candle
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+inside(dishwasher, teapot)      | put the teapot in the dishwasher
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+inside(dishwasher, cup)         | put the cup in the dishwasher
+on(table, bread)                | put the bread on the table
+on(table, bowl)                 | put the bowl on the table
+on(table, pizza)                | put the pizza on the table
+on(table, plant)                | put the plant on the table
+on(couch, rug)                  | put the rug on the couch
+on(table, bottle)               | put the bottle on the table
+]
+
+[ % 10 tv-work-night ; KB: per-clip; dishwasher=fork,knife,spoon
+switched_on(television)         | turn on the television
+has(user, pillow)               | give me the pillow
+on(table, computer)             | put the computer on the table
+has(user, book)                 | give me the book
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+inside(dishwasher, teapot)      | put the teapot in the dishwasher
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+inside(dishwasher, cup)         | put the cup in the dishwasher
+on(table, glass)                | put the glass on the table
+on(table, cake)                 | put the cake on the table
+on(table, jar)                  | put the jar on the table
+on(table, phone)                | put the phone on the table
+on(table, vase)                 | put the vase on the table
+on(table, thermos)              | put the thermos on the table
+]

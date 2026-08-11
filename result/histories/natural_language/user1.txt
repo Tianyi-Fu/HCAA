@@ -1,0 +1,189 @@
+[ % 1 morning ; KB: per-clip; dishwasher=fork,spoon,mug,teapot
+heat the egg
+give me the knife
+put the plate on the table
+put the egg on the plate
+fill the glass from the kettle
+give me the glass
+put the blanket on the couch
+give me the peach
+put the apple on the table
+put the banana on the table
+put the plate in the dishwasher
+put the bowl in the dishwasher
+put the book on the couch
+turn on the lamp
+put the pillow on the couch
+put the rug on the couch
+]
+
+[ % 2 desk-day ; KB: per-clip; dishwasher=knife,spoon,glass,teapot
+put the computer on the table
+give me the pencil
+put the book on the couch
+turn on the lamp
+fill the mug from the kettle
+give me the mug
+put the apple on the table
+put the grape on the table
+put the blanket on the couch
+give me the peach
+put the pillow on the couch
+put the rug on the couch
+put the orange on the table
+put the banana on the table
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 3 tv-night ; KB: per-clip; dishwasher=fork,knife,spoon,cup
+turn on the television
+give me the blanket
+fill the thermos from the kettle
+give me the thermos
+put the apple on the table
+put the grape on the table
+put the pillow on the couch
+put the rug on the couch
+put the book on the couch
+turn on the lamp
+fill the bottle from the kettle
+give me the bottle
+put the orange on the table
+put the banana on the table
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 4 study-eve ; KB: per-clip; dishwasher=knife,spoon,glass,cup
+put the computer on the table
+give me the pencil
+put the book on the couch
+turn on the lamp
+fill the mug from the kettle
+give me the mug
+put the apple on the table
+put the banana on the table
+put the pillow on the couch
+put the rug on the couch
+put the orange on the table
+put the grape on the table
+fill the bottle from the kettle
+give me the bottle
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 5 lunch ; KB: per-clip; dishwasher=spoon,knife,mug,thermos
+heat the chicken
+give me the fork
+put the plate on the table
+put the chicken on the plate
+fill the glass from the kettle
+give me the glass
+put the blanket on the couch
+give me the peach
+put the orange on the table
+put the grape on the table
+put the plate in the dishwasher
+put the bowl in the dishwasher
+put the pillow on the couch
+put the rug on the couch
+put the apple on the table
+put the banana on the table
+]
+
+[ % 6 reading ; KB: per-clip; dishwasher=fork,spoon,mug,cup
+put the book on the couch
+turn on the lamp
+put the blanket on the couch
+give me the peach
+fill the teapot from the kettle
+give me the teapot
+put the apple on the table
+put the grape on the table
+put the pillow on the couch
+put the rug on the couch
+put the orange on the table
+put the banana on the table
+fill the bottle from the kettle
+give me the bottle
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 7 supper ; KB: per-clip; dishwasher=fork,knife,mug,glass
+heat the steak
+give me the spoon
+put the plate on the table
+put the steak on the plate
+fill the teapot from the kettle
+give me the teapot
+put the orange on the table
+put the apple on the table
+put the plate in the dishwasher
+put the bowl in the dishwasher
+put the pillow on the couch
+put the rug on the couch
+put the grape on the table
+put the banana on the table
+fill the bottle from the kettle
+give me the bottle
+]
+
+[ % 8 study-tv ; KB: per-clip; dishwasher=fork,knife,glass,mug
+put the computer on the table
+give me the pencil
+turn on the television
+give me the blanket
+fill the thermos from the kettle
+give me the thermos
+put the orange on the table
+put the apple on the table
+put the pillow on the couch
+put the rug on the couch
+put the grape on the table
+put the banana on the table
+fill the bottle from the kettle
+give me the bottle
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 9 movie ; KB: per-clip; dishwasher=fork,knife,spoon,mug
+turn on the television
+give me the blanket
+fill the bottle from the kettle
+give me the bottle
+put the apple on the table
+put the grape on the table
+put the pillow on the couch
+put the rug on the couch
+fill the jar from the kettle
+give me the jar
+put the orange on the table
+put the banana on the table
+fill the thermos from the kettle
+give me the thermos
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 10 wind-down ; KB: per-clip; dishwasher=fork,knife,spoon,mug
+put the book on the couch
+turn on the lamp
+put the blanket on the couch
+give me the peach
+fill the teapot from the kettle
+give me the teapot
+put the apple on the table
+put the banana on the table
+put the pillow on the couch
+put the rug on the couch
+put the orange on the table
+put the grape on the table
+fill the bottle from the kettle
+give me the bottle
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]

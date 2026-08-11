@@ -1,0 +1,16 @@
+StorageContext
+LightingContext
+RelaxationContext
+CookingContext
+CookingContext
+CookingContext
+DiningContext
+DiningContext
+RelaxationContext
+RelaxationContext
+DiningContext
+DiningContext
+StorageContext
+StorageContext
+CleaningContext
+CleaningContext

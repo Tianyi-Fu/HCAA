@@ -1,0 +1,142 @@
+-holds(changed(dishwasher), 0).
+-holds(changed(microwave_oven), 0).
+-holds(changed(oven), 0).
+-holds(changed(refrigerator), 0).
+-holds(changed(stove), 0).
+-holds(closed(dishwasher), 0).
+-holds(closed(refrigerator), 0).
+-holds(heated(cheese), 0).
+-holds(heated(chicken), 0).
+-holds(heated(egg), 0).
+-holds(heated(salmon), 0).
+-holds(heated(steak), 0).
+-holds(open(microwave_oven), 0).
+-holds(open(oven), 0).
+-holds(open(stove), 0).
+-holds(switched_on(chandelier), 0).
+-holds(switched_on(microwave_oven), 0).
+-holds(switched_on(stove), 0).
+-holds(switched_on(television), 0).
+holds(closed(microwave_oven), 0).
+holds(closed(oven), 0).
+holds(closed(stove), 0).
+holds(furniture_location(bed, bedroom), 0).
+holds(furniture_location(bench, living_room), 0).
+holds(furniture_location(chair, bedroom), 0).
+holds(furniture_location(chandelier, living_room), 0).
+holds(furniture_location(couch, living_room), 0).
+holds(furniture_location(dishwasher, kitchen), 0).
+holds(furniture_location(drawers, kitchen), 0).
+holds(furniture_location(lamp, living_room), 0).
+holds(furniture_location(microwave_oven, kitchen), 0).
+holds(furniture_location(oven, kitchen), 0).
+holds(furniture_location(refrigerator, kitchen), 0).
+holds(furniture_location(stove, kitchen), 0).
+holds(furniture_location(table, kitchen), 0).
+holds(furniture_location(television, living_room), 0).
+holds(has(user, bottle), 0).
+holds(has(user, peach), 0).
+holds(has(user, teapot), 0).
+holds(in(agent1, kitchen), 0).
+holds(inside(dishwasher, fork), 0).
+holds(inside(dishwasher, knife), 0).
+holds(inside(dishwasher, mug), 0).
+holds(inside(dishwasher, plate), 0).
+holds(inside(dishwasher, spoon), 0).
+holds(inside(refrigerator, carrot), 0).
+holds(inside(refrigerator, cheese), 0).
+holds(inside(refrigerator, chicken), 0).
+holds(inside(refrigerator, egg), 0).
+holds(inside(refrigerator, jar), 0).
+holds(inside(refrigerator, lettuce), 0).
+holds(inside(refrigerator, mushroom), 0).
+holds(inside(refrigerator, potato), 0).
+holds(inside(refrigerator, salmon), 0).
+holds(inside(refrigerator, steak), 0).
+holds(inside(refrigerator, tomato), 0).
+holds(location(apple, kitchen, table), 0).
+holds(location(banana, kitchen, table), 0).
+holds(location(basket, bedroom, chair), 0).
+holds(location(blanket, living_room, couch), 0).
+holds(location(book, living_room, couch), 0).
+holds(location(bowl, kitchen, drawers), 0).
+holds(location(bread, kitchen, drawers), 0).
+holds(location(broom, bedroom, chair), 0).
+holds(location(bucket, bedroom, chair), 0).
+holds(location(cake, kitchen, drawers), 0).
+holds(location(candle, living_room, bench), 0).
+holds(location(carrot, kitchen, refrigerator), 0).
+holds(location(cheese, kitchen, refrigerator), 0).
+holds(location(chicken, kitchen, refrigerator), 0).
+holds(location(clock, living_room, bench), 0).
+holds(location(computer, living_room, bench), 0).
+holds(location(cookie, kitchen, drawers), 0).
+holds(location(crayon, living_room, bench), 0).
+holds(location(cup, kitchen, drawers), 0).
+holds(location(curtain, living_room, bench), 0).
+holds(location(egg, kitchen, refrigerator), 0).
+holds(location(fork, kitchen, dishwasher), 0).
+holds(location(glass, kitchen, drawers), 0).
+holds(location(grape, kitchen, table), 0).
+holds(location(jar, kitchen, refrigerator), 0).
+holds(location(kettle, kitchen, drawers), 0).
+holds(location(knife, kitchen, dishwasher), 0).
+holds(location(lettuce, kitchen, refrigerator), 0).
+holds(location(mop, bedroom, chair), 0).
+holds(location(muffin, kitchen, drawers), 0).
+holds(location(mug, kitchen, dishwasher), 0).
+holds(location(mushroom, kitchen, refrigerator), 0).
+holds(location(newspaper, living_room, bench), 0).
+holds(location(orange, kitchen, table), 0).
+holds(location(pencil, living_room, bench), 0).
+holds(location(phone, living_room, bench), 0).
+holds(location(pillow, living_room, couch), 0).
+holds(location(pizza, kitchen, drawers), 0).
+holds(location(plant, living_room, bench), 0).
+holds(location(plate, kitchen, dishwasher), 0).
+holds(location(potato, kitchen, refrigerator), 0).
+holds(location(rug, living_room, couch), 0).
+holds(location(salmon, kitchen, refrigerator), 0).
+holds(location(spoon, kitchen, dishwasher), 0).
+holds(location(steak, kitchen, refrigerator), 0).
+holds(location(thermos, kitchen, drawers), 0).
+holds(location(tomato, kitchen, refrigerator), 0).
+holds(location(towel, bedroom, chair), 0).
+holds(location(vase, living_room, bench), 0).
+holds(on(bench, candle), 0).
+holds(on(bench, clock), 0).
+holds(on(bench, computer), 0).
+holds(on(bench, crayon), 0).
+holds(on(bench, curtain), 0).
+holds(on(bench, newspaper), 0).
+holds(on(bench, pencil), 0).
+holds(on(bench, phone), 0).
+holds(on(bench, plant), 0).
+holds(on(bench, vase), 0).
+holds(on(chair, basket), 0).
+holds(on(chair, broom), 0).
+holds(on(chair, bucket), 0).
+holds(on(chair, mop), 0).
+holds(on(chair, towel), 0).
+holds(on(couch, blanket), 0).
+holds(on(couch, book), 0).
+holds(on(couch, pillow), 0).
+holds(on(couch, rug), 0).
+holds(on(drawers, bowl), 0).
+holds(on(drawers, bread), 0).
+holds(on(drawers, cake), 0).
+holds(on(drawers, cookie), 0).
+holds(on(drawers, cup), 0).
+holds(on(drawers, glass), 0).
+holds(on(drawers, kettle), 0).
+holds(on(drawers, muffin), 0).
+holds(on(drawers, pizza), 0).
+holds(on(drawers, thermos), 0).
+holds(on(table, apple), 0).
+holds(on(table, banana), 0).
+holds(on(table, grape), 0).
+holds(on(table, orange), 0).
+holds(open(dishwasher), 0).
+holds(open(refrigerator), 0).
+holds(switched_on(lamp), 0).
+holds(user_location(living_room), 0).

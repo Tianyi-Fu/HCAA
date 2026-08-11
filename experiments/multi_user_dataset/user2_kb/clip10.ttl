@@ -1,0 +1,1734 @@
+@prefix ex: <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Action a rdfs:Class .
+
+ex:Agent a rdfs:Class .
+
+ex:Appliance a rdfs:Class ;
+    rdfs:subClassOf ex:InsideFurniture .
+
+ex:BakedGood a rdfs:Class ;
+    rdfs:subClassOf ex:Food .
+
+ex:CleaningTool a rdfs:Class ;
+    rdfs:subClassOf ex:Household .
+
+ex:ContainerFurniture a rdfs:Class ;
+    rdfs:subClassOf ex:Furniture .
+
+ex:Context a rdfs:Class .
+
+ex:ContextWeight a rdfs:Class .
+
+ex:Decor a rdfs:Class ;
+    rdfs:subClassOf ex:Household .
+
+ex:Drinkware a rdfs:Class ;
+    rdfs:subClassOf ex:Kitchenware .
+
+ex:Food a rdfs:Class ;
+    rdfs:subClassOf ex:Item .
+
+ex:Fruit a rdfs:Class ;
+    rdfs:subClassOf ex:Food .
+
+ex:Furniture a rdfs:Class .
+
+ex:Household a rdfs:Class ;
+    rdfs:subClassOf ex:Item .
+
+ex:InsideFurniture a rdfs:Class ;
+    rdfs:subClassOf ex:ContainerFurniture .
+
+ex:Item a rdfs:Class .
+
+ex:Kitchenware a rdfs:Class ;
+    rdfs:subClassOf ex:Item .
+
+ex:Light a rdfs:Class ;
+    rdfs:subClassOf ex:SwitchFurniture .
+
+ex:Linen a rdfs:Class ;
+    rdfs:subClassOf ex:Household .
+
+ex:MicrowaveFurniture a rdfs:Class ;
+    rdfs:subClassOf ex:InsideFurniture .
+
+ex:MountedLight a rdfs:Class ;
+    rdfs:subClassOf ex:Light .
+
+ex:MountedMedia a rdfs:Class ;
+    rdfs:subClassOf ex:SwitchFurniture .
+
+ex:OnFurniture a rdfs:Class ;
+    rdfs:subClassOf ex:ContainerFurniture .
+
+ex:PortableLight a rdfs:Class ;
+    rdfs:subClassOf ex:SmallHousehold .
+
+ex:PortableMedia a rdfs:Class ;
+    rdfs:subClassOf ex:SmallHousehold .
+
+ex:Protein a rdfs:Class ;
+    rdfs:subClassOf ex:Food .
+
+ex:Room a rdfs:Class .
+
+ex:SeatFurniture a rdfs:Class ;
+    rdfs:subClassOf ex:OnFurniture .
+
+ex:SmallHousehold a rdfs:Class ;
+    rdfs:subClassOf ex:Item .
+
+ex:State a rdfs:Class .
+
+ex:Stationery a rdfs:Class ;
+    rdfs:subClassOf ex:SmallHousehold .
+
+ex:SwitchFurniture a rdfs:Class ;
+    rdfs:subClassOf ex:Furniture .
+
+ex:TableFurniture a rdfs:Class ;
+    rdfs:subClassOf ex:OnFurniture .
+
+ex:Tableware a rdfs:Class ;
+    rdfs:subClassOf ex:Kitchenware .
+
+ex:User a rdfs:Class .
+
+ex:Vegetable a rdfs:Class ;
+    rdfs:subClassOf ex:Food .
+
+ex:agent1 a ex:Agent ;
+    ex:in ex:kitchen .
+
+ex:apple a ex:Fruit,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1203 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1114 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0872 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1286 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0872 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0787 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1286 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0872 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0872 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0836 ] ;
+    ex:inside ex:refrigerator .
+
+ex:banana a ex:Fruit,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0958 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1011 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0958 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0958 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.091 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0758 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1156 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1167 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1167 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0958 ] ;
+    ex:inside ex:refrigerator .
+
+ex:basket a ex:CleaningTool,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0916 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0962 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1056 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0802 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0962 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1122 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0855 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1122 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1122 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.108 ] ;
+    ex:on ex:chair .
+
+ex:blanket a ex:Item,
+        ex:Linen ;
+    ex:hasContextWeight [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1018 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.095 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.095 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1315 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.095 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1018 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.095 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.095 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.095 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.095 ] ;
+    ex:on ex:bed .
+
+ex:book a ex:Item,
+        ex:PortableMedia ;
+    ex:hasContextWeight [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0793 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1076 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0784 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1159 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0784 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0896 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.0886 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.1171 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1195 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.1255 ] ;
+    ex:on ex:bench .
+
+ex:bottle a ex:Drinkware,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0774 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1169 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0928 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0986 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1315 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0877 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1169 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0831 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1023 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0928 ] ;
+    ex:inside ex:refrigerator .
+
+ex:bowl a ex:Item,
+        ex:Tableware ;
+    ex:hasContextWeight [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1093 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.082 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0946 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0923 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1013 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1093 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0923 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1036 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.123 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0923 ] ;
+    ex:on ex:drawers .
+
+ex:bread a ex:BakedGood,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0718 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0769 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0718 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0718 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0769 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1282 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1495 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1495 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0769 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1267 ] ;
+    ex:inside ex:dishwasher .
+
+ex:broom a ex:CleaningTool,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0974 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1035 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1379 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1073 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.092 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0974 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0974 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0974 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0828 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0871 ] ;
+    ex:on ex:chair .
+
+ex:bucket a ex:CleaningTool,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1186 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0942 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0843 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1186 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0942 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1186 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1001 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.089 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0785 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1038 ] ;
+    ex:on ex:chair .
+
+ex:cake a ex:BakedGood,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1076 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0932 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0932 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0932 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0932 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0932 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1165 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1165 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0999 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0932 ] ;
+    ex:inside ex:dishwasher .
+
+ex:candle a ex:Decor,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.102 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.102 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.102 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.102 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.102 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1312 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0923 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.102 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0874 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0769 ] ;
+    ex:on ex:bench .
+
+ex:carrot a ex:Item,
+        ex:Vegetable ;
+    ex:hasContextWeight [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1073 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.12 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0874 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.111 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.092 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1041 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.092 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.092 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0971 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0971 ] ;
+    ex:inside ex:refrigerator .
+
+ex:chalice a ex:Drinkware,
+        ex:Item ;
+    ex:on ex:drawers .
+
+ex:chandelier a ex:Furniture,
+        ex:Light,
+        ex:MountedLight,
+        ex:SwitchFurniture ;
+    ex:furniture_location ex:living_room ;
+    ex:hasContextWeight [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1083 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1032 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.0963 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0903 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0903 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0963 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0903 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0903 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1445 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0903 ] .
+
+ex:cheese a ex:Item,
+        ex:Protein ;
+    ex:hasContextWeight [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0849 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1292 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0849 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1143 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.135 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0849 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0849 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.066 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.081 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.135 ] ;
+    ex:inside ex:refrigerator .
+
+ex:chicken a ex:Item,
+        ex:Protein ;
+    ex:hasContextWeight [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0877 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0975 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1253 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1044 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0835 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0975 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1169 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0975 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0923 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0975 ] ;
+    ex:inside ex:refrigerator .
+
+ex:clock a ex:Decor,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1024 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1024 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1024 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1078 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1024 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0931 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1115 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0878 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0878 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1024 ] ;
+    ex:on ex:bench .
+
+ex:computer a ex:Item,
+        ex:PortableMedia ;
+    ex:hasContextWeight [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1255 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0879 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0976 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0976 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0976 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1255 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0837 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0837 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1034 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.0976 ] ;
+    ex:on ex:bench .
+
+ex:cookie a ex:BakedGood,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0897 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1104 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.1339 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0957 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1366 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0783 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0717 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0861 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0861 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1116 ] ;
+    ex:inside ex:dishwasher .
+
+ex:couch a ex:Furniture,
+        ex:OnFurniture,
+        ex:SeatFurniture ;
+    ex:furniture_location ex:living_room ;
+    ex:hasContextWeight [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.111 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0931 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0879 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.111 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1055 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1318 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0833 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0732 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0923 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.111 ] .
+
+ex:crayon a ex:Item,
+        ex:Stationery ;
+    ex:hasContextWeight [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0977 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0922 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1076 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0874 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0977 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.1107 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1038 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0977 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1076 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0977 ] ;
+    ex:on ex:bench .
+
+ex:cup a ex:Drinkware,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0907 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0793 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1045 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1269 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.111 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1015 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0952 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0846 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.111 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0952 ] ;
+    ex:on ex:drawers .
+
+ex:curtain a ex:Item,
+        ex:Linen ;
+    ex:hasContextWeight [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0932 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0825 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1027 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1087 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1056 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1087 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1027 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.088 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1087 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.099 ] ;
+    ex:on ex:bench .
+
+ex:doughnut a ex:Baked,
+        ex:Item ;
+    ex:on ex:drawers .
+
+ex:egg a ex:Item,
+        ex:Protein ;
+    ex:hasContextWeight [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0815 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0858 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0815 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1397 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0858 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1358 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0858 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1254 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0931 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0858 ] ;
+    ex:inside ex:refrigerator .
+
+ex:fork a ex:Item,
+        ex:Tableware ;
+    ex:hasContextWeight [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0873 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0975 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1075 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0975 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1382 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1036 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0813 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0975 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0975 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0921 ] ;
+    ex:on ex:drawers .
+
+ex:glass a ex:Drinkware,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0944 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1037 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1007 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1259 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0979 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0839 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1102 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1102 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0787 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0944 ] ;
+    ex:on ex:drawers .
+
+ex:grape a ex:Fruit,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0958 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0958 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1176 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0908 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1095 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1106 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1006 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0958 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0875 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0958 ] ;
+    ex:inside ex:refrigerator .
+
+ex:jar a ex:Drinkware,
+        ex:Item ;
+    ex:filled ex:kettle ;
+    ex:hasContextWeight [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1169 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0928 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0774 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0986 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1315 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0928 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0831 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1169 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1023 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0877 ] ;
+    ex:inside ex:refrigerator .
+
+ex:knife a ex:Item,
+        ex:Tableware ;
+    ex:hasContextWeight [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1002 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1058 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1002 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.136 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0907 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1002 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1002 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0756 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1002 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0907 ] ;
+    ex:on ex:drawers .
+
+ex:lamp a ex:Furniture,
+        ex:Light,
+        ex:MountedLight,
+        ex:SwitchFurniture ;
+    ex:furniture_location ex:living_room ;
+    ex:hasContextWeight [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0878 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1056 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1056 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1115 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0738 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1115 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0976 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0976 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0836 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1254 ] .
+
+ex:lettuce a ex:Item,
+        ex:Vegetable ;
+    ex:hasContextWeight [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0774 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0977 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1032 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0977 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1032 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1032 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1092 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1179 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0928 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0977 ] ;
+    ex:inside ex:refrigerator .
+
+ex:microwave_oven a ex:Appliance,
+        ex:Furniture,
+        ex:InsideFurniture,
+        ex:MicrowaveFurniture,
+        ex:SwitchFurniture ;
+    ex:changed false ;
+    ex:furniture_location ex:kitchen ;
+    ex:hasContextWeight [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1267 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.076 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1521 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0845 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1303 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.08 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.1183 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.076 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.08 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.076 ] ;
+    ex:open false .
+
+ex:mop a ex:CleaningTool,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.098 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1041 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1079 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.098 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.098 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0925 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1234 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.098 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0877 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0925 ] ;
+    ex:on ex:chair .
+
+ex:muffin a ex:BakedGood,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0623 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1461 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0623 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0877 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0779 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.167 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0623 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.167 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0738 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0935 ] ;
+    ex:inside ex:dishwasher .
+
+ex:mug a ex:Drinkware,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0855 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.114 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0855 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0902 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0997 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1353 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0902 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0902 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0955 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.114 ] ;
+    ex:on ex:drawers .
+
+ex:mushroom a ex:Item,
+        ex:Vegetable ;
+    ex:hasContextWeight [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0888 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0934 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1044 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0789 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.111 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0986 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1138 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1138 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0986 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0986 ] ;
+    ex:inside ex:refrigerator .
+
+ex:newspaper a ex:Item,
+        ex:PortableMedia ;
+    ex:hasContextWeight [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.1284 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.0907 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.1124 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0856 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0917 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0856 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0856 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0856 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1284 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1058 ] ;
+    ex:on ex:bench .
+
+ex:orange a ex:Fruit,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0932 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0778 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1119 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1065 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1065 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1099 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0778 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.1053 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1065 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1044 ] ;
+    ex:inside ex:refrigerator .
+
+ex:oven a ex:Appliance,
+        ex:Furniture,
+        ex:InsideFurniture ;
+    ex:changed false ;
+    ex:furniture_location ex:kitchen ;
+    ex:hasContextWeight [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0842 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0935 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0842 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0886 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.0886 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0842 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1403 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0842 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0842 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1683 ] ;
+    ex:open false .
+
+ex:peach a ex:Fruit,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0935 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0911 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0987 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0935 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0987 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0871 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0987 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1139 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.111 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1139 ] ;
+    ex:inside ex:refrigerator .
+
+ex:pear a ex:Fruit,
+        ex:Item ;
+    ex:inside ex:refrigerator .
+
+ex:pencil a ex:Item,
+        ex:Stationery ;
+    ex:hasContextWeight [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0977 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0977 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1076 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1038 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0977 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0874 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.1107 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0977 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1076 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0922 ] ;
+    ex:on ex:bench .
+
+ex:phone a ex:Item,
+        ex:PortableMedia ;
+    ex:hasContextWeight [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1008 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0966 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0912 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0912 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0995 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1008 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0995 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1368 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0966 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0871 ] ;
+    ex:on ex:bench .
+
+ex:pillow a ex:Item,
+        ex:Linen ;
+    ex:hasContextWeight [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0926 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0926 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0926 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1481 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0926 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0926 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0988 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.0988 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0926 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0988 ] ;
+    ex:on ex:bed .
+
+ex:pizza a ex:BakedGood,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0921 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0758 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0859 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1534 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0614 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0614 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1718 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0614 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1652 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0716 ] ;
+    ex:inside ex:dishwasher .
+
+ex:plant a ex:Decor,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1084 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1124 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0948 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0984 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1084 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0948 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.092 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1012 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0948 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0948 ] ;
+    ex:on ex:bench .
+
+ex:plate a ex:Item,
+        ex:Tableware ;
+    ex:hasContextWeight [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0861 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1027 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1017 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.122 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1084 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0949 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0861 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1027 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1005 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0949 ] ;
+    ex:on ex:drawers .
+
+ex:potato a ex:Item,
+        ex:Vegetable ;
+    ex:hasContextWeight [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0947 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1071 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0899 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0947 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1142 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1199 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0947 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0947 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1153 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0749 ] ;
+    ex:inside ex:refrigerator .
+
+ex:rug a ex:Item,
+        ex:Linen ;
+    ex:hasContextWeight [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1027 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1087 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0825 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0932 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1087 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.088 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1056 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1087 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1027 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.099 ] ;
+    ex:on ex:bench .
+
+ex:salmon a ex:Item,
+        ex:Protein ;
+    ex:hasContextWeight [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.08 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.08 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0834 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0872 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1142 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1333 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0872 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1142 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1333 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0872 ] ;
+    ex:inside ex:refrigerator .
+
+ex:spoon a ex:Item,
+        ex:Tableware ;
+    ex:hasContextWeight [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0952 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.111 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0907 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0793 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1015 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0952 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.111 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1045 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0846 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1269 ] ;
+    ex:on ex:drawers .
+
+ex:steak a ex:Item,
+        ex:Protein ;
+    ex:hasContextWeight [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.06 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0839 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1679 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0899 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0741 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.06 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1614 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.07 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1728 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.06 ] ;
+    ex:inside ex:refrigerator .
+
+ex:stove a ex:Appliance,
+        ex:Furniture,
+        ex:InsideFurniture,
+        ex:SwitchFurniture ;
+    ex:changed false ;
+    ex:furniture_location ex:kitchen ;
+    ex:hasContextWeight [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0894 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0993 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1051 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1064 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.0993 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0993 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1276 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0993 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0993 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0751 ] ;
+    ex:open false .
+
+ex:table a ex:Furniture,
+        ex:OnFurniture,
+        ex:TableFurniture ;
+    ex:furniture_location ex:kitchen ;
+    ex:hasContextWeight [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.073 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0955 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1103 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1241 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0784 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0828 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1045 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1034 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1176 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1103 ] .
+
+ex:teapot a ex:Drinkware,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0937 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0937 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1183 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0992 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1183 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0781 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0887 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1222 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0843 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1035 ] ;
+    ex:on ex:drawers .
+
+ex:television a ex:Furniture,
+        ex:MountedMedia,
+        ex:SwitchFurniture ;
+    ex:furniture_location ex:living_room ;
+    ex:hasContextWeight [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1436 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0907 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.1005 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1117 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0798 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0907 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0957 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0957 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.0957 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0957 ] .
+
+ex:thermos a ex:Drinkware,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.088 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0924 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1026 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.077 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1319 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0924 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1173 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0972 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1173 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.084 ] ;
+    ex:on ex:drawers .
+
+ex:tomato a ex:Item,
+        ex:Vegetable ;
+    ex:hasContextWeight [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0925 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1028 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1102 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1175 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1102 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0974 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0974 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0974 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0771 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0974 ] ;
+    ex:inside ex:refrigerator .
+
+ex:towel a ex:Item,
+        ex:Linen ;
+    ex:hasContextWeight [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0919 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1471 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0919 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1051 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.0981 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0981 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0919 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0919 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0919 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0919 ] ;
+    ex:on ex:chair .
+
+ex:user a ex:User ;
+    ex:user_location ex:living_room .
+
+ex:vase a ex:Decor,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0927 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0927 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0981 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.117 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1317 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0772 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0878 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0834 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1024 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.117 ] ;
+    ex:on ex:bench .
+
+ex:kettle a ex:Drinkware,
+        ex:Item ;
+    ex:hasContextWeight [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0885 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1021 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0978 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0978 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1154 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1118 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1032 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1118 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0978 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0737 ] ;
+    ex:on ex:drawers .
+
+ex:bed a ex:Furniture,
+        ex:OnFurniture,
+        ex:SeatFurniture ;
+    ex:furniture_location ex:bedroom ;
+    ex:hasContextWeight [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1036 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0878 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0946 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0922 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1036 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0878 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0984 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1054 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.123 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1036 ] .
+
+ex:chair a ex:Furniture,
+        ex:OnFurniture,
+        ex:SeatFurniture ;
+    ex:furniture_location ex:bedroom ;
+    ex:hasContextWeight [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1026 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.1146 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0947 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1026 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0897 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0974 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1026 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.086 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1003 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.1096 ] .
+
+ex:dishwasher a ex:Appliance,
+        ex:Furniture,
+        ex:InsideFurniture ;
+    ex:changed false ;
+    ex:furniture_location ex:kitchen ;
+    ex:hasContextWeight [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0927 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0883 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1544 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0858 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0842 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1416 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0883 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0883 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.0883 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.0883 ] ;
+    ex:open false .
+
+ex:bench a ex:Furniture,
+        ex:OnFurniture,
+        ex:SeatFurniture ;
+    ex:furniture_location ex:living_room ;
+    ex:hasContextWeight [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.12 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.0889 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.12 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.08 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0741 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.1123 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0941 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.1143 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.0842 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1123 ] .
+
+ex:drawers a ex:Furniture,
+        ex:OnFurniture,
+        ex:TableFurniture ;
+    ex:furniture_location ex:kitchen ;
+    ex:hasContextWeight [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.1006 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.0944 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.0839 ],
+        [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1036 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.0839 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.0978 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.1101 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0899 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.1258 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.1101 ] .
+
+ex:refrigerator a ex:Appliance,
+        ex:Furniture,
+        ex:InsideFurniture ;
+    ex:changed false ;
+    ex:furniture_location ex:kitchen ;
+    ex:hasContextWeight [ ex:context ex:CleaningContext ;
+            ex:importanceWeight 0.1521 ],
+        [ ex:context ex:EntertainmentContext ;
+            ex:importanceWeight 0.0874 ],
+        [ ex:context ex:WorkContext ;
+            ex:importanceWeight 0.083 ],
+        [ ex:context ex:RelaxationContext ;
+            ex:importanceWeight 0.0922 ],
+        [ ex:context ex:CookingContext ;
+            ex:importanceWeight 0.166 ],
+        [ ex:context ex:ReadingContext ;
+            ex:importanceWeight 0.083 ],
+        [ ex:context ex:StorageContext ;
+            ex:importanceWeight 0.083 ],
+        [ ex:context ex:LightingContext ;
+            ex:importanceWeight 0.083 ],
+        [ ex:context ex:StudyingContext ;
+            ex:importanceWeight 0.083 ],
+        [ ex:context ex:DiningContext ;
+            ex:importanceWeight 0.0874 ] ;
+    ex:open false .

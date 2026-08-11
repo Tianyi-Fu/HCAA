@@ -1,0 +1,189 @@
+[ % 1 morning ; KB: per-clip; dishwasher=fork,spoon,mug,teapot
+heated(egg)                     | heat the egg
+has(user, knife)                | give me the knife
+on(table, plate)                | put the plate on the table
+on(plate, egg)                  | put the egg on the plate
+filled(glass, kettle)           | fill the glass from the kettle
+has(user, glass)                | give me the glass
+on(couch, blanket)              | put the blanket on the couch
+has(user, peach)                | give me the peach
+on(table, apple)                | put the apple on the table
+on(table, banana)               | put the banana on the table
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, bowl)        | put the bowl in the dishwasher
+on(couch, book)                 | put the book on the couch
+switched_on(lamp)               | turn on the lamp
+on(couch, pillow)               | put the pillow on the couch
+on(couch, rug)                  | put the rug on the couch
+]
+
+[ % 2 desk-day ; KB: per-clip; dishwasher=knife,spoon,glass,teapot
+on(table, computer)             | put the computer on the table
+has(user, pencil)               | give me the pencil
+on(couch, book)                 | put the book on the couch
+switched_on(lamp)               | turn on the lamp
+filled(mug, kettle)             | fill the mug from the kettle
+has(user, mug)                  | give me the mug
+on(table, apple)                | put the apple on the table
+on(table, grape)                | put the grape on the table
+on(couch, blanket)              | put the blanket on the couch
+has(user, peach)                | give me the peach
+on(couch, pillow)               | put the pillow on the couch
+on(couch, rug)                  | put the rug on the couch
+on(table, orange)               | put the orange on the table
+on(table, banana)               | put the banana on the table
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, bowl)        | put the bowl in the dishwasher
+]
+
+[ % 3 tv-night ; KB: per-clip; dishwasher=fork,knife,spoon,cup
+switched_on(television)         | turn on the television
+has(user, blanket)              | give me the blanket
+filled(thermos, kettle)         | fill the thermos from the kettle
+has(user, thermos)              | give me the thermos
+on(table, apple)                | put the apple on the table
+on(table, grape)                | put the grape on the table
+on(couch, pillow)               | put the pillow on the couch
+on(couch, rug)                  | put the rug on the couch
+on(couch, book)                 | put the book on the couch
+switched_on(lamp)               | turn on the lamp
+filled(bottle, kettle)          | fill the bottle from the kettle
+has(user, bottle)               | give me the bottle
+on(table, orange)               | put the orange on the table
+on(table, banana)               | put the banana on the table
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, bowl)        | put the bowl in the dishwasher
+]
+
+[ % 4 study-eve ; KB: per-clip; dishwasher=knife,spoon,glass,cup
+on(table, computer)             | put the computer on the table
+has(user, pencil)               | give me the pencil
+on(couch, book)                 | put the book on the couch
+switched_on(lamp)               | turn on the lamp
+filled(mug, kettle)             | fill the mug from the kettle
+has(user, mug)                  | give me the mug
+on(table, apple)                | put the apple on the table
+on(table, banana)               | put the banana on the table
+on(couch, pillow)               | put the pillow on the couch
+on(couch, rug)                  | put the rug on the couch
+on(table, orange)               | put the orange on the table
+on(table, grape)                | put the grape on the table
+filled(bottle, kettle)          | fill the bottle from the kettle
+has(user, bottle)               | give me the bottle
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, bowl)        | put the bowl in the dishwasher
+]
+
+[ % 5 lunch ; KB: per-clip; dishwasher=spoon,knife,mug,thermos
+heated(chicken)                 | heat the chicken
+has(user, fork)                 | give me the fork
+on(table, plate)                | put the plate on the table
+on(plate, chicken)              | put the chicken on the plate
+filled(glass, kettle)           | fill the glass from the kettle
+has(user, glass)                | give me the glass
+on(couch, blanket)              | put the blanket on the couch
+has(user, peach)                | give me the peach
+on(table, orange)               | put the orange on the table
+on(table, grape)                | put the grape on the table
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, bowl)        | put the bowl in the dishwasher
+on(couch, pillow)               | put the pillow on the couch
+on(couch, rug)                  | put the rug on the couch
+on(table, apple)                | put the apple on the table
+on(table, banana)               | put the banana on the table
+]
+
+[ % 6 reading ; KB: per-clip; dishwasher=fork,spoon,mug,cup
+on(couch, book)                 | put the book on the couch
+switched_on(lamp)               | turn on the lamp
+on(couch, blanket)              | put the blanket on the couch
+has(user, peach)                | give me the peach
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+on(table, apple)                | put the apple on the table
+on(table, grape)                | put the grape on the table
+on(couch, pillow)               | put the pillow on the couch
+on(couch, rug)                  | put the rug on the couch
+on(table, orange)               | put the orange on the table
+on(table, banana)               | put the banana on the table
+filled(bottle, kettle)          | fill the bottle from the kettle
+has(user, bottle)               | give me the bottle
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, bowl)        | put the bowl in the dishwasher
+]
+
+[ % 7 supper ; KB: per-clip; dishwasher=fork,knife,mug,glass
+heated(steak)                   | heat the steak
+has(user, spoon)                | give me the spoon
+on(table, plate)                | put the plate on the table
+on(plate, steak)                | put the steak on the plate
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+on(table, orange)               | put the orange on the table
+on(table, apple)                | put the apple on the table
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, bowl)        | put the bowl in the dishwasher
+on(couch, pillow)               | put the pillow on the couch
+on(couch, rug)                  | put the rug on the couch
+on(table, grape)                | put the grape on the table
+on(table, banana)               | put the banana on the table
+filled(bottle, kettle)          | fill the bottle from the kettle
+has(user, bottle)               | give me the bottle
+]
+
+[ % 8 study-tv ; KB: per-clip; dishwasher=fork,knife,glass,mug
+on(table, computer)             | put the computer on the table
+has(user, pencil)               | give me the pencil
+switched_on(television)         | turn on the television
+has(user, blanket)              | give me the blanket
+filled(thermos, kettle)         | fill the thermos from the kettle
+has(user, thermos)              | give me the thermos
+on(table, orange)               | put the orange on the table
+on(table, apple)                | put the apple on the table
+on(couch, pillow)               | put the pillow on the couch
+on(couch, rug)                  | put the rug on the couch
+on(table, grape)                | put the grape on the table
+on(table, banana)               | put the banana on the table
+filled(bottle, kettle)          | fill the bottle from the kettle
+has(user, bottle)               | give me the bottle
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, bowl)        | put the bowl in the dishwasher
+]
+
+[ % 9 movie ; KB: per-clip; dishwasher=fork,knife,spoon,mug
+switched_on(television)         | turn on the television
+has(user, blanket)              | give me the blanket
+filled(bottle, kettle)          | fill the bottle from the kettle
+has(user, bottle)               | give me the bottle
+on(table, apple)                | put the apple on the table
+on(table, grape)                | put the grape on the table
+on(couch, pillow)               | put the pillow on the couch
+on(couch, rug)                  | put the rug on the couch
+filled(jar, kettle)             | fill the jar from the kettle
+has(user, jar)                  | give me the jar
+on(table, orange)               | put the orange on the table
+on(table, banana)               | put the banana on the table
+filled(thermos, kettle)         | fill the thermos from the kettle
+has(user, thermos)              | give me the thermos
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, bowl)        | put the bowl in the dishwasher
+]
+
+[ % 10 wind-down ; KB: per-clip; dishwasher=fork,knife,spoon,mug
+on(couch, book)                 | put the book on the couch
+switched_on(lamp)               | turn on the lamp
+on(couch, blanket)              | put the blanket on the couch
+has(user, peach)                | give me the peach
+filled(teapot, kettle)          | fill the teapot from the kettle
+has(user, teapot)               | give me the teapot
+on(table, apple)                | put the apple on the table
+on(table, banana)               | put the banana on the table
+on(couch, pillow)               | put the pillow on the couch
+on(couch, rug)                  | put the rug on the couch
+on(table, orange)               | put the orange on the table
+on(table, grape)                | put the grape on the table
+filled(bottle, kettle)          | fill the bottle from the kettle
+has(user, bottle)               | give me the bottle
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, bowl)        | put the bowl in the dishwasher
+]

@@ -1,0 +1,189 @@
+[ % 1 lunch-read ; KB: per-clip; dishwasher=
+on(table, plate)                | put the plate on the table
+open(refrigerator)              | open the refrigerator
+inside(microwave_oven, steak)   | put the steak in the microwave
+on(table, apple)                | put the apple on the table
+closed(refrigerator)            | close the refrigerator
+heated(steak)                   | heat the steak
+on(table, steak)                | put the steak on the table
+has(user, basket)               | give me the basket
+on(couch, newspaper)            | put the newspaper on the couch
+has(user, glass)                | give me the glass
+on(table, cookie)               | put the cookie on the table
+on(couch, pillow)               | put the pillow on the couch
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, cup)         | put the cup in the dishwasher
+]
+
+[ % 2 work-relax ; KB: per-clip; dishwasher=
+on(table, computer)             | put the computer on the table
+has(user, mug)                  | give me the mug
+on(couch, blanket)              | put the blanket on the couch
+has(user, pizza)                | give me the pizza
+on(table, plate)                | put the plate on the table
+on(table, cookie)               | put the cookie on the table
+on(table, bread)                | put the bread on the table
+on(table, jar)                  | put the jar on the table
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+filled(thermos, kettle)         | fill the thermos from the kettle
+has(user, thermos)              | give me the thermos
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, cup)         | put the cup in the dishwasher
+inside(dishwasher, thermos)     | put the thermos in the dishwasher
+on(couch, rug)                  | put the rug on the couch
+]
+
+[ % 3 tv-read-relax ; KB: per-clip; dishwasher=
+switched_on(television)         | turn on the television
+has(user, bowl)                 | give me the bowl
+on(couch, newspaper)            | put the newspaper on the couch
+has(user, glass)                | give me the glass
+on(couch, blanket)              | put the blanket on the couch
+has(user, pizza)                | give me the pizza
+on(table, plate)                | put the plate on the table
+on(table, cookie)               | put the cookie on the table
+on(table, cake)                 | put the cake on the table
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+filled(thermos, kettle)         | fill the thermos from the kettle
+has(user, thermos)              | give me the thermos
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, cup)         | put the cup in the dishwasher
+inside(dishwasher, thermos)     | put the thermos in the dishwasher
+]
+
+[ % 4 lunch-tv ; KB: per-clip; dishwasher=
+on(table, plate)                | put the plate on the table
+open(refrigerator)              | open the refrigerator
+inside(microwave_oven, steak)   | put the steak in the microwave
+on(table, banana)               | put the banana on the table
+closed(refrigerator)            | close the refrigerator
+heated(steak)                   | heat the steak
+on(table, steak)                | put the steak on the table
+has(user, basket)               | give me the basket
+switched_on(television)         | turn on the television
+has(user, bowl)                 | give me the bowl
+on(table, cake)                 | put the cake on the table
+on(couch, rug)                  | put the rug on the couch
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, cup)         | put the cup in the dishwasher
+]
+
+[ % 5 work-read ; KB: per-clip; dishwasher=
+on(table, computer)             | put the computer on the table
+has(user, mug)                  | give me the mug
+on(couch, newspaper)            | put the newspaper on the couch
+has(user, glass)                | give me the glass
+on(table, plate)                | put the plate on the table
+on(table, cake)                 | put the cake on the table
+on(table, muffin)               | put the muffin on the table
+on(table, bottle)               | put the bottle on the table
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+filled(thermos, kettle)         | fill the thermos from the kettle
+has(user, thermos)              | give me the thermos
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, cup)         | put the cup in the dishwasher
+inside(dishwasher, thermos)     | put the thermos in the dishwasher
+on(couch, pillow)               | put the pillow on the couch
+]
+
+[ % 6 tv-relax-read ; KB: per-clip; dishwasher=
+switched_on(television)         | turn on the television
+has(user, bowl)                 | give me the bowl
+on(couch, blanket)              | put the blanket on the couch
+has(user, pizza)                | give me the pizza
+on(couch, newspaper)            | put the newspaper on the couch
+has(user, glass)                | give me the glass
+on(table, plate)                | put the plate on the table
+on(table, bread)                | put the bread on the table
+on(table, bottle)               | put the bottle on the table
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+filled(thermos, kettle)         | fill the thermos from the kettle
+has(user, thermos)              | give me the thermos
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, cup)         | put the cup in the dishwasher
+inside(dishwasher, thermos)     | put the thermos in the dishwasher
+]
+
+[ % 7 supper-relax ; KB: per-clip; dishwasher=
+on(table, plate)                | put the plate on the table
+open(refrigerator)              | open the refrigerator
+inside(microwave_oven, steak)   | put the steak in the microwave
+on(table, orange)               | put the orange on the table
+closed(refrigerator)            | close the refrigerator
+heated(steak)                   | heat the steak
+on(table, steak)                | put the steak on the table
+has(user, basket)               | give me the basket
+on(couch, blanket)              | put the blanket on the couch
+has(user, pizza)                | give me the pizza
+on(table, muffin)               | put the muffin on the table
+on(couch, pillow)               | put the pillow on the couch
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, cup)         | put the cup in the dishwasher
+]
+
+[ % 8 work-tv ; KB: per-clip; dishwasher=
+on(table, computer)             | put the computer on the table
+has(user, mug)                  | give me the mug
+switched_on(television)         | turn on the television
+has(user, bowl)                 | give me the bowl
+on(table, plate)                | put the plate on the table
+on(table, bread)                | put the bread on the table
+on(table, jar)                  | put the jar on the table
+on(table, cookie)               | put the cookie on the table
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+filled(thermos, kettle)         | fill the thermos from the kettle
+has(user, thermos)              | give me the thermos
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, cup)         | put the cup in the dishwasher
+inside(dishwasher, thermos)     | put the thermos in the dishwasher
+on(couch, rug)                  | put the rug on the couch
+]
+
+[ % 9 relax-read ; KB: per-clip; dishwasher=
+on(couch, blanket)              | put the blanket on the couch
+has(user, pizza)                | give me the pizza
+on(couch, newspaper)            | put the newspaper on the couch
+has(user, glass)                | give me the glass
+on(table, plate)                | put the plate on the table
+on(table, muffin)               | put the muffin on the table
+on(table, cake)                 | put the cake on the table
+on(table, bread)                | put the bread on the table
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+filled(thermos, kettle)         | fill the thermos from the kettle
+has(user, thermos)              | give me the thermos
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, cup)         | put the cup in the dishwasher
+inside(dishwasher, thermos)     | put the thermos in the dishwasher
+on(couch, pillow)               | put the pillow on the couch
+]
+
+[ % 10 tv-work-night ; KB: per-clip; dishwasher=
+switched_on(television)         | turn on the television
+has(user, bowl)                 | give me the bowl
+on(table, computer)             | put the computer on the table
+has(user, mug)                  | give me the mug
+on(table, plate)                | put the plate on the table
+on(table, jar)                  | put the jar on the table
+on(table, bottle)               | put the bottle on the table
+on(table, muffin)               | put the muffin on the table
+filled(cup, kettle)             | fill the cup from the kettle
+has(user, cup)                  | give me the cup
+filled(thermos, kettle)         | fill the thermos from the kettle
+has(user, thermos)              | give me the thermos
+inside(dishwasher, plate)       | put the plate in the dishwasher
+inside(dishwasher, cup)         | put the cup in the dishwasher
+inside(dishwasher, thermos)     | put the thermos in the dishwasher
+on(couch, rug)                  | put the rug on the couch
+]

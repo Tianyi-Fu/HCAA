@@ -1,0 +1,37 @@
+{
+  "noask_overall": {
+    "Proposed": [
+      68.7,
+      null,
+      null,
+      null,
+      68.7
+    ]
+  },
+  "ask_overall": {
+    "Proposed": [
+      68.7,
+      null,
+      null,
+      null,
+      68.7
+    ]
+  },
+  "ask_answered": {
+    "Proposed": [
+      68.7,
+      null,
+      null,
+      null,
+      68.7
+    ]
+  },
+  "ask_clarification": {
+    "Proposed": [
+      0.0,
+      null,
+      null,
+      null
+    ]
+  }
+}
