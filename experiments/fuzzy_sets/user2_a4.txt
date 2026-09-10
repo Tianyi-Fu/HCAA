@@ -1,0 +1,225 @@
+[  % 1
+on(couch, newspaper) | put the newspaper on the couch
+has(user, newspaper) | give me it
+filled(mug, kettle) | fill it from the kettle
+has(user, mug) | give me it
+on(table, muffin) | put it on the table
+has(user, muffin) | give me it
+open(refrigerator) | open it
+closed(refrigerator) | close it
+filled(cup, kettle) | fill it from the kettle
+has(user, cup) | give me it
+on(table, apple) | put it on the table
+has(user, apple) | give me it
+inside(dishwasher, mug) | put it in the dishwasher
+inside(dishwasher, cup) | put it in the dishwasher
+on(couch, pillow) | put it on the couch
+on(table, banana) | put it on the table
+]
+
+[  % 2
+on(table, computer) | put the computer on the table
+has(user, phone) | give me it
+filled(cup, kettle) | fill it from the kettle
+has(user, cup) | give me it
+on(couch, newspaper) | put it on the couch
+has(user, newspaper) | give me it
+filled(thermos, kettle) | fill it from the kettle
+has(user, thermos) | give me it
+on(table, cookie) | put it on the table
+has(user, cookie) | give me it
+has(user, glass) | give me it
+inside(dishwasher, cup) | put it in the dishwasher
+inside(dishwasher, thermos) | put it in the dishwasher
+on(couch, pillow) | put it on the couch
+on(table, grape) | put it on the table
+has(user, grape) | give me it
+]
+
+[  % 3
+on(couch, newspaper) | put the newspaper on the couch
+has(user, newspaper) | give me it
+filled(mug, kettle) | fill it from the kettle
+has(user, mug) | give me it
+on(table, cake) | put it on the table
+has(user, cake) | give me it
+filled(teapot, kettle) | fill it from the kettle
+has(user, teapot) | give me it
+on(table, muffin) | put it on the table
+has(user, muffin) | give me it
+inside(dishwasher, mug) | put it in the dishwasher
+inside(dishwasher, teapot) | put it in the dishwasher
+on(couch, pillow) | put it on the couch
+on(couch, rug) | put it on the couch
+on(table, orange) | put it on the table
+has(user, orange) | give me it
+]
+
+[  % 4
+on(table, computer) | put the computer on the table
+has(user, phone) | give me it
+filled(thermos, kettle) | fill it from the kettle
+has(user, thermos) | give me it
+on(couch, newspaper) | put it on the couch
+has(user, newspaper) | give me it
+filled(cup, kettle) | fill it from the kettle
+has(user, cup) | give me it
+on(table, cookie) | put it on the table
+has(user, cookie) | give me it
+has(user, jar) | give me it
+inside(dishwasher, thermos) | put it in the dishwasher
+inside(dishwasher, cup) | put it in the dishwasher
+on(couch, pillow) | put it on the couch
+on(table, banana) | put it on the table
+has(user, banana) | give me it
+]
+
+[  % 5
+on(couch, newspaper) | put the newspaper on the couch
+has(user, newspaper) | give me it
+filled(mug, kettle) | fill it from the kettle
+has(user, mug) | give me it
+on(table, muffin) | put it on the table
+has(user, muffin) | give me it
+open(refrigerator) | open it
+closed(refrigerator) | close it
+filled(cup, kettle) | fill it from the kettle
+has(user, cup) | give me it
+on(table, cookie) | put it on the table
+has(user, cookie) | give me it
+inside(dishwasher, mug) | put it in the dishwasher
+inside(dishwasher, cup) | put it in the dishwasher
+on(couch, pillow) | put it on the couch
+on(table, apple) | put it on the table
+]
+
+[  % 6
+on(couch, newspaper) | put the newspaper on the couch
+has(user, newspaper) | give me it
+filled(thermos, kettle) | fill it from the kettle
+has(user, thermos) | give me it
+on(table, cake) | put it on the table
+has(user, cake) | give me it
+filled(mug, kettle) | fill it from the kettle
+has(user, mug) | give me it
+has(user, bottle) | give me it
+on(table, muffin) | put it on the table
+inside(dishwasher, thermos) | put it in the dishwasher
+inside(dishwasher, mug) | put it in the dishwasher
+on(couch, pillow) | put it on the couch
+on(couch, rug) | put it on the couch
+on(table, grape) | put it on the table
+has(user, grape) | give me it
+]
+
+[  % 7
+on(table, computer) | put the computer on the table
+has(user, phone) | give me it
+filled(mug, kettle) | fill it from the kettle
+has(user, mug) | give me it
+on(couch, newspaper) | put it on the couch
+has(user, newspaper) | give me it
+filled(thermos, kettle) | fill it from the kettle
+has(user, thermos) | give me it
+on(table, cookie) | put it on the table
+has(user, cookie) | give me it
+inside(dishwasher, mug) | put it in the dishwasher
+inside(dishwasher, thermos) | put it in the dishwasher
+on(couch, pillow) | put it on the couch
+on(table, orange) | put it on the table
+has(user, orange) | give me it
+on(couch, rug) | put it on the couch
+]
+
+[  % 8
+on(couch, newspaper) | put the newspaper on the couch
+has(user, newspaper) | give me it
+filled(thermos, kettle) | fill it from the kettle
+has(user, thermos) | give me it
+on(table, cake) | put it on the table
+has(user, cake) | give me it
+filled(cup, kettle) | fill it from the kettle
+has(user, cup) | give me it
+on(table, cookie) | put it on the table
+has(user, cookie) | give me it
+inside(dishwasher, thermos) | put it in the dishwasher
+inside(dishwasher, cup) | put it in the dishwasher
+on(couch, pillow) | put it on the couch
+on(table, grape) | put it on the table
+has(user, grape) | give me it
+on(couch, rug) | put it on the couch
+]
+
+[  % 9
+has(user, newspaper) | give me the newspaper
+filled(chalice, kettle) | fill it from the kettle
+on(couch, pillow) | put it on the couch
+on(table, apple) | put it on the table
+has(user, apple) | give me it
+]
+
+[  % 10
+filled(mug, kettle) | fill the mug from the kettle
+on(table, doughnut) | put it on the table
+has(user, mug) | give me it
+on(couch, pillow) | put it on the couch
+has(user, newspaper) | give me it
+]
+
+[  % 11
+on(couch, matchbook) | put the matchbook on the couch
+has(user, matchbook) | give me it
+filled(ashtray, electric_kettle) | fill it from the electric_kettle
+has(user, ashtray) | give me it
+on(table, pancake) | put it on the table
+has(user, pancake) | give me it
+open(refrigerator) | open it
+closed(refrigerator) | close it
+filled(chalice, electric_kettle) | fill it from the electric_kettle
+has(user, chalice) | give me it
+on(table, raspberry) | put it on the table
+has(user, raspberry) | give me it
+inside(dishwasher, ashtray) | put it in the dishwasher
+inside(dishwasher, chalice) | put it in the dishwasher
+on(couch, place_mat) | put it on the couch
+on(table, mango) | put it on the table
+]
+
+[  % 12
+on(table, calculator) | put the calculator on the table
+has(user, camcorder) | give me it
+filled(chalice, electric_kettle) | fill it from the electric_kettle
+has(user, chalice) | give me it
+on(couch, matchbook) | put it on the couch
+has(user, matchbook) | give me it
+filled(thermometer, electric_kettle) | fill it from the electric_kettle
+has(user, thermometer) | give me it
+on(table, scone) | put it on the table
+has(user, scone) | give me it
+has(user, hourglass) | give me it
+inside(dishwasher, chalice) | put it in the dishwasher
+inside(dishwasher, thermometer) | put it in the dishwasher
+on(couch, place_mat) | put it on the couch
+on(table, cherry) | put it on the table
+has(user, cherry) | give me it
+]
+
+[  % 13
+on(couch, matchbook) | put the matchbook on the couch
+has(user, matchbook) | give me it
+filled(ashtray, electric_kettle) | fill it from the electric_kettle
+has(user, ashtray) | give me it
+on(table, cupcake) | put it on the table
+has(user, cupcake) | give me it
+filled(coffee_maker, electric_kettle) | fill it from the electric_kettle
+has(user, coffee_maker) | give me it
+on(table, pancake) | put it on the table
+has(user, pancake) | give me it
+inside(dishwasher, ashtray) | put it in the dishwasher
+inside(dishwasher, coffee_maker) | put it in the dishwasher
+on(couch, place_mat) | put it on the couch
+on(couch, scarf) | put it on the couch
+on(table, clementine) | put it on the table
+has(user, clementine) | give me it
+]
+

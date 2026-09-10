@@ -25,7 +25,7 @@ MODE_MAP = {
 }
 MODE_ORDER = ["pure_llm", "three_factor_llm", "three_factor_history"]
 ASK_MODES = ["ask", "noask"]
-LEVELS = ["l1", "l2", "l3", "l4"]
+LEVELS = ["a1", "a2", "a3", "a4"]
 
 
 def _latest_summary_dir() -> Path:
@@ -99,8 +99,8 @@ def _parse_run_name(run_name: str):
 def _parse_user_level(target_name: str):
     m_user = re.match(r"^(user\d+_[a-zA-Z]+)", target_name)
     user_id = m_user.group(1) if m_user else ""
-    m_lvl = re.search(r"_l(\d+)\.txt$", target_name)
-    level = f"l{m_lvl.group(1)}" if m_lvl else ""
+    m_lvl = re.search(r"_a(\d+)\.txt$", target_name)
+    level = f"a{m_lvl.group(1)}" if m_lvl else ""
     return user_id, level
 
 
@@ -155,7 +155,7 @@ def main():
         derived["hard_error_rate"] = derived["derived_noask_hard_error_rate"]
         derived["total"] = derived["derived_noask_total"]
         agg = pd.concat([agg, derived], ignore_index=True)
-    agg["level_mapped"] = agg["level"].replace({"l5": "l4"})
+    agg["level_mapped"] = agg["level"].replace({"a5": "a4"})
     agg = agg[agg["level_mapped"].isin(LEVELS)]
     agg["mode_label"] = agg["mode"].map(MODE_MAP)
 
@@ -293,7 +293,7 @@ def main():
         if mode not in MODE_MAP.keys():
             continue
         user_id, level = _parse_user_level(target_name)
-        level_mapped = level.replace("l5", "l4") if level else ""
+        level_mapped = level.replace("a5", "a4") if level else ""
         if level_mapped and level_mapped not in LEVELS:
             continue
         rows = json.loads(tr_path.read_text(encoding="utf-8"))

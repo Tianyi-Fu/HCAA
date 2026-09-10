@@ -27,6 +27,7 @@ def load_kg(file_path: str | None = None) -> Graph:
     path = _abs_path(file_path)
     if not os.path.exists(path):
         raise FileNotFoundError(f"KG file not found: {path}")
+    g.remove((None, None, None))
     g.parse(path, format="turtle")
     return g
 

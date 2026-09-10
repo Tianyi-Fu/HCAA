@@ -13,19 +13,18 @@ RESULTS_ROOT = ROOT / "experiments" / "results"
 MU_DIR = ROOT / "experiments" / "multi_user_dataset"
 OUT_ROOT = ROOT / "result"
 
-LEVELS = ["l1", "l2", "l3", "l4"]
+LEVELS = ["a1", "a2", "a3", "a4"]
 
 PAPER_LABEL = {
     "B0": "B0_random",
     "B1": "B1_llm",
-    "B1fhca": "B2_llm_asp",
     "B2": "B2_llm_asp",
     "B3": "B3_sem_sal",
     "B4": "B4_object",
-    "L0F": "B5_l0attr",
-    "B5": "B6_concept",
-    "B6": "B7_no_asp",
-    "FULL": "Proposed",
+    "B5": "B5_l0attr",
+    "B6": "B6_concept",
+    "B7": "B7_no_asp",
+    "Proposed": "Proposed",
 }
 
 TABLE_ORDER = [
@@ -60,7 +59,7 @@ def _pct(num: int, den: int) -> float | None:
     return round(100.0 * num / den, 1) if den else None
 
 
-def _collect(run_dir: Path):
+def _collect(run_dir: Path, groups=None):
     cells = defaultdict(list)
     direct = run_dir / "test_results.json"
     if direct.is_file():
@@ -88,6 +87,8 @@ def _collect(run_dir: Path):
         if level not in LEVELS:
             continue
         recs = json.loads(tr.read_text(encoding="utf-8"))
+        if groups:
+            recs = [r for r in recs if int(r.get("group", 0)) in groups]
         for r in recs:
             r.setdefault("user", user)
             r.setdefault("level", level)
@@ -186,7 +187,13 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("run_tag", nargs="?")
     ap.add_argument("--clean", action="store_true")
+    ap.add_argument("--table", type=int, choices=[1, 2, 3])
     args = ap.parse_args()
+    global OUT_ROOT
+    groups = set()
+    if args.table:
+        groups = {11, 12, 13} if args.table in (1, 2) else set(range(1, 11))
+        OUT_ROOT = ROOT / "result" / f"table{args.table}"
 
     if args.run_tag:
         run_dir = RESULTS_ROOT / args.run_tag
@@ -205,7 +212,7 @@ def main() -> int:
     if args.clean and OUT_ROOT.exists():
         shutil.rmtree(OUT_ROOT)
 
-    cells = _collect(run_dir)
+    cells = _collect(run_dir, groups)
     if not cells:
         print(f"[ERROR] no scored cells in {run_dir}")
         return 3

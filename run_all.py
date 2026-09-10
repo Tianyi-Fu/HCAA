@@ -25,7 +25,7 @@ def main() -> int:
     ap.add_argument("--user", action="append",
                     help="restrict to a user; repeatable, defaults to all five")
     ap.add_argument("--level", action="append",
-                    help="restrict to l1, l2, l3 or l4; repeatable")
+                    help="restrict to a1, a2, a3 or a4; repeatable")
     ap.add_argument("--run-tag", default="full_run")
     args = ap.parse_args()
 

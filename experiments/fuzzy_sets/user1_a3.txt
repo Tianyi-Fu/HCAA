@@ -1,0 +1,247 @@
+[  % 1
+heated(egg) | heat the egg
+has(user, knife) | give me the item
+on(table, plate) | put the item on the table
+on(plate, egg) | put the item on the plate
+filled(glass, kettle) | fill the item from the kettle
+has(user, glass) | give me the item
+on(couch, blanket) | put the item on the couch
+has(user, peach) | give me the item
+on(table, apple) | put the item on the table
+on(table, banana) | put the item on the table
+inside(dishwasher, plate) | put the item in the dishwasher
+inside(dishwasher, bowl) | put the item in the dishwasher
+on(couch, book) | put the item on the couch
+switched_on(lamp) | turn on the item
+on(couch, pillow) | put the item on the couch
+on(couch, rug) | put the item on the couch
+]
+
+[  % 2
+on(table, computer) | put the computer on the table
+has(user, pencil) | give me the item
+on(couch, book) | put the item on the couch
+switched_on(lamp) | turn on the item
+filled(mug, kettle) | fill the item from the kettle
+has(user, mug) | give me the item
+on(table, apple) | put the item on the table
+on(table, grape) | put the item on the table
+on(couch, blanket) | put the item on the couch
+has(user, peach) | give me the item
+on(couch, pillow) | put the item on the couch
+on(couch, rug) | put the item on the couch
+on(table, orange) | put the item on the table
+on(table, banana) | put the item on the table
+inside(dishwasher, plate) | put the item in the dishwasher
+inside(dishwasher, bowl) | put the item in the dishwasher
+]
+
+[  % 3
+switched_on(television) | turn on the television
+has(user, blanket) | give me the item
+filled(thermos, kettle) | fill the item from the kettle
+has(user, thermos) | give me the item
+on(table, apple) | put the item on the table
+on(table, grape) | put the item on the table
+on(couch, pillow) | put the item on the couch
+on(couch, rug) | put the item on the couch
+on(couch, book) | put the item on the couch
+switched_on(lamp) | turn on the item
+filled(bottle, kettle) | fill the item from the kettle
+has(user, bottle) | give me the item
+on(table, orange) | put the item on the table
+on(table, banana) | put the item on the table
+inside(dishwasher, plate) | put the item in the dishwasher
+inside(dishwasher, bowl) | put the item in the dishwasher
+]
+
+[  % 4
+on(table, computer) | put the computer on the table
+has(user, pencil) | give me the item
+on(couch, book) | put the item on the couch
+switched_on(lamp) | turn on the item
+filled(mug, kettle) | fill the item from the kettle
+has(user, mug) | give me the item
+on(table, apple) | put the item on the table
+on(table, banana) | put the item on the table
+on(couch, pillow) | put the item on the couch
+on(couch, rug) | put the item on the couch
+on(table, orange) | put the item on the table
+on(table, grape) | put the item on the table
+filled(bottle, kettle) | fill the item from the kettle
+has(user, bottle) | give me the item
+inside(dishwasher, plate) | put the item in the dishwasher
+inside(dishwasher, bowl) | put the item in the dishwasher
+]
+
+[  % 5
+heated(chicken) | heat the chicken
+has(user, fork) | give me the item
+on(table, plate) | put the item on the table
+on(plate, chicken) | put the item on the plate
+filled(glass, kettle) | fill the item from the kettle
+has(user, glass) | give me the item
+on(couch, blanket) | put the item on the couch
+has(user, peach) | give me the item
+on(table, orange) | put the item on the table
+on(table, grape) | put the item on the table
+inside(dishwasher, plate) | put the item in the dishwasher
+inside(dishwasher, bowl) | put the item in the dishwasher
+on(couch, pillow) | put the item on the couch
+on(couch, rug) | put the item on the couch
+on(table, apple) | put the item on the table
+on(table, banana) | put the item on the table
+]
+
+[  % 6
+on(couch, book) | put the book on the couch
+switched_on(lamp) | turn on the item
+on(couch, blanket) | put the item on the couch
+has(user, peach) | give me the item
+filled(teapot, kettle) | fill the item from the kettle
+has(user, teapot) | give me the item
+on(table, apple) | put the item on the table
+on(table, grape) | put the item on the table
+on(couch, pillow) | put the item on the couch
+on(couch, rug) | put the item on the couch
+on(table, orange) | put the item on the table
+on(table, banana) | put the item on the table
+filled(bottle, kettle) | fill the item from the kettle
+has(user, bottle) | give me the item
+inside(dishwasher, plate) | put the item in the dishwasher
+inside(dishwasher, bowl) | put the item in the dishwasher
+]
+
+[  % 7
+heated(steak) | heat the steak
+has(user, spoon) | give me the item
+on(table, plate) | put the item on the table
+on(plate, steak) | put the item on the plate
+filled(teapot, kettle) | fill the item from the kettle
+has(user, teapot) | give me the item
+on(table, orange) | put the item on the table
+on(table, apple) | put the item on the table
+inside(dishwasher, plate) | put the item in the dishwasher
+inside(dishwasher, bowl) | put the item in the dishwasher
+on(couch, pillow) | put the item on the couch
+on(couch, rug) | put the item on the couch
+on(table, grape) | put the item on the table
+on(table, banana) | put the item on the table
+filled(bottle, kettle) | fill the item from the kettle
+has(user, bottle) | give me the item
+]
+
+[  % 8
+on(table, computer) | put the computer on the table
+has(user, pencil) | give me the item
+switched_on(television) | turn on the item
+has(user, blanket) | give me the item
+filled(thermos, kettle) | fill the item from the kettle
+has(user, thermos) | give me the item
+on(table, orange) | put the item on the table
+on(table, apple) | put the item on the table
+on(couch, pillow) | put the item on the couch
+on(couch, rug) | put the item on the couch
+on(table, grape) | put the item on the table
+on(table, banana) | put the item on the table
+filled(bottle, kettle) | fill the item from the kettle
+has(user, bottle) | give me the item
+inside(dishwasher, plate) | put the item in the dishwasher
+inside(dishwasher, bowl) | put the item in the dishwasher
+]
+
+[  % 9
+switched_on(television) | turn on the television
+has(user, blanket) | give me the item
+filled(bottle, kettle) | fill the item from the kettle
+has(user, bottle) | give me the item
+on(table, apple) | put the item on the table
+on(table, grape) | put the item on the table
+on(couch, pillow) | put the item on the couch
+on(couch, rug) | put the item on the couch
+filled(jar, kettle) | fill the item from the kettle
+has(user, jar) | give me the item
+on(table, orange) | put the item on the table
+on(table, banana) | put the item on the table
+filled(thermos, kettle) | fill the item from the kettle
+has(user, thermos) | give me the item
+inside(dishwasher, plate) | put the item in the dishwasher
+inside(dishwasher, bowl) | put the item in the dishwasher
+]
+
+[  % 10
+on(couch, book) | put the book on the couch
+switched_on(lamp) | turn on the item
+on(couch, blanket) | put the item on the couch
+has(user, peach) | give me the item
+filled(teapot, kettle) | fill the item from the kettle
+has(user, teapot) | give me the item
+on(table, apple) | put the item on the table
+on(table, banana) | put the item on the table
+on(couch, pillow) | put the item on the couch
+on(couch, rug) | put the item on the couch
+on(table, orange) | put the item on the table
+on(table, grape) | put the item on the table
+filled(bottle, kettle) | fill the item from the kettle
+has(user, bottle) | give me the item
+inside(dishwasher, plate) | put the item in the dishwasher
+inside(dishwasher, bowl) | put the item in the dishwasher
+]
+
+[  % 11
+heated(beans) | heat the beans
+has(user, dagger) | give me the item
+on(table, tray) | put the item on the table
+on(tray, beans) | put the item on the tray
+filled(hourglass, electric_kettle) | fill the item from the electric_kettle
+has(user, hourglass) | give me the item
+on(couch, sweater) | put the item on the couch
+has(user, apricot) | give me the item
+on(table, raspberry) | put the item on the table
+on(table, mango) | put the item on the table
+inside(dishwasher, tray) | put the item in the dishwasher
+inside(dishwasher, saltshaker) | put the item in the dishwasher
+on(couch, videotape) | put the item on the couch
+switched_on(flashlight) | turn on the item
+on(couch, place_mat) | put the item on the couch
+on(couch, scarf) | put the item on the couch
+]
+
+[  % 12
+on(table, calculator) | put the calculator on the table
+has(user, paperclip) | give me the item
+on(couch, videotape) | put the item on the couch
+switched_on(flashlight) | turn on the item
+filled(ashtray, electric_kettle) | fill the item from the electric_kettle
+has(user, ashtray) | give me the item
+on(table, raspberry) | put the item on the table
+on(table, cherry) | put the item on the table
+on(couch, sweater) | put the item on the couch
+has(user, apricot) | give me the item
+on(couch, place_mat) | put the item on the couch
+on(couch, scarf) | put the item on the couch
+on(table, clementine) | put the item on the table
+on(table, mango) | put the item on the table
+inside(dishwasher, tray) | put the item in the dishwasher
+inside(dishwasher, saltshaker) | put the item in the dishwasher
+]
+
+[  % 13
+switched_on(projector) | turn on the projector
+has(user, sweater) | give me the item
+filled(thermometer, electric_kettle) | fill the item from the electric_kettle
+has(user, thermometer) | give me the item
+on(table, raspberry) | put the item on the table
+on(table, cherry) | put the item on the table
+on(couch, place_mat) | put the item on the couch
+on(couch, scarf) | put the item on the couch
+on(couch, videotape) | put the item on the couch
+switched_on(flashlight) | turn on the item
+filled(oil_can, electric_kettle) | fill the item from the electric_kettle
+has(user, oil_can) | give me the item
+on(table, clementine) | put the item on the table
+on(table, mango) | put the item on the table
+inside(dishwasher, tray) | put the item in the dishwasher
+inside(dishwasher, saltshaker) | put the item in the dishwasher
+]
+

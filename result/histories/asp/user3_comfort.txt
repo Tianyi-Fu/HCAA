@@ -1,0 +1,229 @@
+[ % 1
+open(refrigerator) |
+inside(microwave_oven, salmon) |
+closed(refrigerator) |
+heated(salmon) |
+on(table, plate) |
+on(plate, salmon) |
+has(user, towel) |
+on(couch, newspaper) |
+has(user, candle) |
+filled(teapot, kettle) |
+has(user, teapot) |
+inside(dishwasher, plate) |
+inside(dishwasher, teapot) |
+on(table, bowl) |
+on(table, bread) |
+on(couch, rug) |
+]
+
+[ % 2
+on(table, computer) |
+has(user, book) |
+on(couch, blanket) |
+has(user, muffin) |
+filled(teapot, kettle) |
+has(user, teapot) |
+inside(dishwasher, teapot) |
+filled(cup, kettle) |
+has(user, cup) |
+inside(dishwasher, cup) |
+on(table, glass) |
+on(table, cake) |
+on(table, jar) |
+on(table, vase) |
+on(table, phone) |
+on(table, plant) |
+]
+
+[ % 3
+open(refrigerator) |
+inside(microwave_oven, salmon) |
+closed(refrigerator) |
+heated(salmon) |
+on(table, plate) |
+on(plate, salmon) |
+has(user, towel) |
+switched_on(television) |
+has(user, pillow) |
+filled(teapot, kettle) |
+has(user, teapot) |
+inside(dishwasher, plate) |
+inside(dishwasher, teapot) |
+on(table, mug) |
+on(table, cake) |
+on(table, clock) |
+]
+
+[ % 4
+on(table, computer) |
+has(user, book) |
+on(couch, newspaper) |
+has(user, candle) |
+filled(teapot, kettle) |
+has(user, teapot) |
+inside(dishwasher, teapot) |
+filled(cup, kettle) |
+has(user, cup) |
+inside(dishwasher, cup) |
+on(table, bread) |
+on(table, jar) |
+on(table, vase) |
+on(table, plant) |
+on(table, cookie) |
+on(table, bottle) |
+]
+
+[ % 5
+open(refrigerator) |
+inside(microwave_oven, salmon) |
+closed(refrigerator) |
+heated(salmon) |
+on(table, plate) |
+on(plate, salmon) |
+has(user, towel) |
+on(couch, blanket) |
+has(user, muffin) |
+filled(teapot, kettle) |
+has(user, teapot) |
+inside(dishwasher, plate) |
+inside(dishwasher, teapot) |
+on(table, bowl) |
+on(table, bread) |
+on(table, vase) |
+]
+
+[ % 6
+on(table, computer) |
+has(user, book) |
+switched_on(television) |
+has(user, pillow) |
+filled(teapot, kettle) |
+has(user, teapot) |
+inside(dishwasher, teapot) |
+filled(cup, kettle) |
+has(user, cup) |
+inside(dishwasher, cup) |
+on(table, glass) |
+on(table, jar) |
+on(table, phone) |
+on(table, clock) |
+on(table, cookie) |
+on(table, mug) |
+]
+
+[ % 7
+on(couch, blanket) |
+has(user, muffin) |
+on(couch, newspaper) |
+has(user, candle) |
+filled(teapot, kettle) |
+has(user, teapot) |
+inside(dishwasher, teapot) |
+filled(cup, kettle) |
+has(user, cup) |
+inside(dishwasher, cup) |
+on(table, bread) |
+on(table, bowl) |
+on(table, pizza) |
+on(table, plant) |
+on(couch, rug) |
+on(table, bottle) |
+]
+
+[ % 8
+switched_on(television) |
+has(user, pillow) |
+on(table, computer) |
+has(user, book) |
+filled(teapot, kettle) |
+has(user, teapot) |
+inside(dishwasher, teapot) |
+filled(cup, kettle) |
+has(user, cup) |
+inside(dishwasher, cup) |
+on(table, glass) |
+on(table, cake) |
+on(table, jar) |
+on(table, phone) |
+on(table, vase) |
+on(table, thermos) |
+]
+
+[ % 9
+filled(teapot, kettle) |
+on(couch, pillow) |
+on(couch, blanket) |
+on(couch, rug) |
+on(couch, curtain) |
+has(user, newspaper) |
+has(user, book) |
+has(user, crayon) |
+]
+
+[ % 10
+has(user, plate) |
+has(user, bowl) |
+has(user, spoon) |
+on(couch, newspaper) |
+has(user, newspaper) |
+has(user, pencil) |
+on(couch, pillow) |
+]
+
+[ % 11
+open(refrigerator) |
+inside(microwave_oven, trout) |
+closed(refrigerator) |
+heated(trout) |
+on(table, tray) |
+on(tray, trout) |
+has(user, dishrag) |
+on(couch, matchbook) |
+has(user, lantern) |
+filled(coffee_maker, electric_kettle) |
+has(user, coffee_maker) |
+inside(dishwasher, tray) |
+inside(dishwasher, coffee_maker) |
+on(table, saltshaker) |
+on(table, baguette) |
+on(couch, scarf) |
+]
+
+[ % 12
+on(table, calculator) |
+has(user, videotape) |
+on(couch, sweater) |
+has(user, pancake) |
+filled(coffee_maker, electric_kettle) |
+has(user, coffee_maker) |
+inside(dishwasher, coffee_maker) |
+filled(chalice, electric_kettle) |
+has(user, chalice) |
+inside(dishwasher, chalice) |
+on(table, hourglass) |
+on(table, cupcake) |
+on(table, barrel) |
+on(table, fountain) |
+on(table, camcorder) |
+on(table, vegetable) |
+]
+
+[ % 13
+open(refrigerator) |
+inside(microwave_oven, trout) |
+closed(refrigerator) |
+heated(trout) |
+on(table, tray) |
+on(tray, trout) |
+has(user, dishrag) |
+switched_on(projector) |
+has(user, place_mat) |
+filled(coffee_maker, electric_kettle) |
+has(user, coffee_maker) |
+inside(dishwasher, tray) |
+inside(dishwasher, coffee_maker) |
+on(table, ashtray) |
+on(table, cupcake) |
+on(table, wristwatch) |
+]

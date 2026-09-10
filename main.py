@@ -160,7 +160,7 @@ _LAST_SCORE_WEIGHTS_FURN: Optional[tuple[float, float, float]] = None
 def _run_level(run_name: str | None) -> Optional[int]:
     if not run_name:
         return None
-    m = re.search(r"_l([1-4])(?=$|_)", run_name.lower())
+    m = re.search(r"_a([1-4])(?=$|_)", run_name.lower())
     if not m:
         return None
     return int(m.group(1))

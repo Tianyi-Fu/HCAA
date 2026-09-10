@@ -68,7 +68,7 @@ def _validate_cache_freshness(targets: List[str], history_dir: Path) -> List[Tup
 
 def main() -> int:
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-    run_tag = os.environ.get("BASELINE8_RUN_TAG", "").strip() or f"baseline8_u1u5_l1l4_{ts}"
+    run_tag = os.environ.get("BASELINE8_RUN_TAG", "").strip() or f"baseline8_u1u5_a1a4_{ts}"
     run_root = RESULTS_ROOT / run_tag
     run_root.mkdir(parents=True, exist_ok=True)
 
@@ -91,7 +91,7 @@ def main() -> int:
     targets: List[str] = []
     for p in sorted(FUZZY_DIR.glob("user*_*.txt")):
         n = p.name
-        if not any(n.endswith(f"_{lv}.txt") for lv in ("l1", "l2", "l3", "l4")):
+        if not any(n.endswith(f"_{lv}.txt") for lv in ("a1", "a2", "a3", "a4")):
             continue
         stem = n.replace(".txt", "")
         user_id = "_".join(stem.split("_")[:-1]).lower()
@@ -113,7 +113,7 @@ def main() -> int:
 
     force_no_ask_raw = os.environ.get("BASELINE8_FORCE_NO_ASK")
     if force_no_ask_raw is None:
-        force_no_ask = "0" if strict_no_fallback else "1"
+        force_no_ask = "1"
     else:
         force_no_ask = force_no_ask_raw.strip()
     if force_no_ask not in {"0", "1"}:
@@ -218,7 +218,7 @@ def main() -> int:
             {},
         ),
         BaselineCfg(
-            "B1",
+            "X_LLM_ZS",
             "LLM_zero_shot",
             "llm_only",
             {
@@ -227,7 +227,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "B2",
+            "X_LLM_ZS_ASP",
             "LLM_full_information_ASP_filtered",
             "llm_filtered",
             {
@@ -238,7 +238,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "B1f",
+            "X_LLM_FS",
             "LLM_few_shot",
             "llm_only",
             {
@@ -247,7 +247,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "B2f",
+            "X_LLM_FS_ASP",
             "LLM_few_shot_ASP_filtered",
             "llm_filtered",
             {
@@ -256,7 +256,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "B1fc",
+            "X_LLM_FS_COT",
             "LLM_few_shot_CoT",
             "llm_only",
             {
@@ -266,7 +266,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "B1fh",
+            "X_LLM_FH",
             "LLM_full_history",
             "llm_only",
             {
@@ -276,7 +276,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "B1fhc",
+            "B1",
             "LLM_full_history_CoT",
             "llm_only",
             {
@@ -287,7 +287,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "B1fhca",
+            "B2",
             "LLM_full_history_CoT_ASP",
             "llm_filtered",
             {
@@ -317,7 +317,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "B5",
+            "B6",
             "L1_only",
             "three_factor",
             {
@@ -327,7 +327,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "B6",
+            "B7",
             "Full_no_ASP",
             "three_factor",
             {
@@ -337,7 +337,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "TGT",
+            "X_TGT",
             "Target_only",
             "three_factor",
             {
@@ -347,7 +347,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "TRG",
+            "X_TRG",
             "Trigger_only",
             "three_factor",
             {
@@ -357,7 +357,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "FULL",
+            "Proposed",
             "Proposed_fusion",
             "three_factor",
             {
@@ -366,7 +366,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "PTN",
+            "X_PTN",
             "Pattern_only",
             "three_factor",
             {
@@ -376,7 +376,7 @@ def main() -> int:
             },
         ),
         BaselineCfg(
-            "L0F",
+            "B5",
             "L0_attributes_full",
             "three_factor",
             {

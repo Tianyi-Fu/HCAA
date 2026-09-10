@@ -1,0 +1,228 @@
+[ % 1
+on(table, computer) |
+has(user, mug) |
+on(couch, blanket) |
+has(user, pizza) |
+on(table, plate) |
+on(table, cookie) |
+on(table, bread) |
+on(table, jar) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+on(couch, rug) |
+]
+
+[ % 2
+switched_on(television) |
+has(user, bowl) |
+on(couch, newspaper) |
+has(user, glass) |
+on(couch, blanket) |
+has(user, pizza) |
+on(table, plate) |
+on(table, cookie) |
+on(table, cake) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+]
+
+[ % 3
+on(table, computer) |
+has(user, mug) |
+on(couch, newspaper) |
+has(user, glass) |
+on(table, plate) |
+on(table, cake) |
+on(table, muffin) |
+on(table, bottle) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+on(couch, pillow) |
+]
+
+[ % 4
+switched_on(television) |
+has(user, bowl) |
+on(couch, blanket) |
+has(user, pizza) |
+on(couch, newspaper) |
+has(user, glass) |
+on(table, plate) |
+on(table, bread) |
+on(table, bottle) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+]
+
+[ % 5
+on(table, plate) |
+open(refrigerator) |
+inside(microwave_oven, steak) |
+on(table, orange) |
+closed(refrigerator) |
+heated(steak) |
+on(table, steak) |
+has(user, basket) |
+on(couch, blanket) |
+has(user, pizza) |
+on(table, muffin) |
+on(couch, pillow) |
+filled(cup, kettle) |
+has(user, cup) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+]
+
+[ % 6
+on(table, computer) |
+has(user, mug) |
+switched_on(television) |
+has(user, bowl) |
+on(table, plate) |
+on(table, bread) |
+on(table, jar) |
+on(table, cookie) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+on(couch, rug) |
+]
+
+[ % 7
+on(couch, blanket) |
+has(user, pizza) |
+on(couch, newspaper) |
+has(user, glass) |
+on(table, plate) |
+on(table, muffin) |
+on(table, cake) |
+on(table, bread) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+on(couch, pillow) |
+]
+
+[ % 8
+switched_on(television) |
+has(user, bowl) |
+on(table, computer) |
+has(user, mug) |
+on(table, plate) |
+on(table, jar) |
+on(table, bottle) |
+on(table, muffin) |
+filled(cup, kettle) |
+has(user, cup) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+on(couch, rug) |
+]
+
+[ % 9
+filled(mug, kettle) |
+on(table, peach) |
+on(couch, pillow) |
+on(couch, blanket) |
+on(couch, rug) |
+on(couch, towel) |
+has(user, newspaper) |
+]
+
+[ % 10
+filled(teapot, kettle) |
+on(couch, newspaper) |
+has(user, newspaper) |
+has(user, pencil) |
+on(couch, pillow) |
+on(couch, blanket) |
+has(user, plate) |
+]
+
+[ % 11
+on(table, calculator) |
+has(user, ashtray) |
+on(couch, sweater) |
+has(user, hamburger) |
+on(table, tray) |
+on(table, scone) |
+on(table, baguette) |
+on(table, barrel) |
+filled(chalice, electric_kettle) |
+has(user, chalice) |
+filled(thermometer, electric_kettle) |
+has(user, thermometer) |
+inside(dishwasher, tray) |
+inside(dishwasher, chalice) |
+inside(dishwasher, thermometer) |
+on(couch, scarf) |
+]
+
+[ % 12
+switched_on(projector) |
+has(user, saltshaker) |
+on(couch, matchbook) |
+has(user, hourglass) |
+on(couch, sweater) |
+has(user, hamburger) |
+on(table, tray) |
+on(table, scone) |
+on(table, cupcake) |
+filled(chalice, electric_kettle) |
+has(user, chalice) |
+filled(thermometer, electric_kettle) |
+has(user, thermometer) |
+inside(dishwasher, tray) |
+inside(dishwasher, chalice) |
+inside(dishwasher, thermometer) |
+]
+
+[ % 13
+on(table, calculator) |
+has(user, ashtray) |
+on(couch, matchbook) |
+has(user, hourglass) |
+on(table, tray) |
+on(table, cupcake) |
+on(table, pancake) |
+on(table, oil_can) |
+filled(chalice, electric_kettle) |
+has(user, chalice) |
+filled(thermometer, electric_kettle) |
+has(user, thermometer) |
+inside(dishwasher, tray) |
+inside(dishwasher, chalice) |
+inside(dishwasher, thermometer) |
+on(couch, place_mat) |
+]

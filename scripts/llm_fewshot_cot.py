@@ -11,7 +11,7 @@ USER = sys.argv[1] if len(sys.argv) > 1 else "user1_reader"
 RUN  = sys.argv[2] if len(sys.argv) > 2 else "u1v2"
 MODE = sys.argv[3] if len(sys.argv) > 3 else "fewshot"
 WORKERS = int(sys.argv[4]) if len(sys.argv) > 4 else 8
-LEVELS = ("l1", "l2", "l3", "l4")
+LEVELS = ("a1", "a2", "a3", "a4")
 
 HIST_PATH = ROOT / "experiments" / "multi_user_dataset" / f"{USER}_history.txt"
 import os

@@ -82,7 +82,7 @@ def _load_by_level(csv_path: Path) -> Dict[str, float]:
 def _run_one(mode_name: str, history_dir: Path, force_no_ask: bool, run_tag: str) -> Dict[str, object]:
     env = os.environ.copy()
     env["BASELINE8_RUN_TAG"] = run_tag
-    env["BASELINE8_ONLY"] = "FULL"
+    env["BASELINE8_ONLY"] = "Proposed"
     env["BASELINE8_FORCE_NO_ASK"] = "1" if force_no_ask else "0"
     env["BASELINE8_DISABLE_TIMEOUT"] = env.get("BASELINE8_DISABLE_TIMEOUT", "1")
     env["BASELINE8_HISTORY_DIR"] = str(history_dir)
@@ -106,15 +106,15 @@ def _run_one(mode_name: str, history_dir: Path, force_no_ask: bool, run_tag: str
         "total": total,
         "success": success,
         "overall_acc": acc,
-        "l1": by_level.get("l1", 0.0),
-        "l2": by_level.get("l2", 0.0),
-        "l3": by_level.get("l3", 0.0),
-        "l4": by_level.get("l4", 0.0),
+        "a1": by_level.get("a1", 0.0),
+        "a2": by_level.get("a2", 0.0),
+        "a3": by_level.get("a3", 0.0),
+        "a4": by_level.get("a4", 0.0),
     }
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Run same-user vs wrong-user vs pooled history contrast (FULL only).")
+    ap = argparse.ArgumentParser(description="Run same-user vs wrong-user vs pooled history contrast (Proposed only).")
     ap.add_argument("--include-ask", action="store_true", help="also run ask mode")
     ap.add_argument(
         "--include-pooled",
@@ -148,10 +148,10 @@ def main() -> int:
             "total": int(sum(int(r["total"]) for r in wrong_shift_rows) / len(wrong_shift_rows)),
             "success": int(sum(int(r["success"]) for r in wrong_shift_rows) / len(wrong_shift_rows)),
             "overall_acc": sum(float(r["overall_acc"]) for r in wrong_shift_rows) / len(wrong_shift_rows),
-            "l1": sum(float(r["l1"]) for r in wrong_shift_rows) / len(wrong_shift_rows),
-            "l2": sum(float(r["l2"]) for r in wrong_shift_rows) / len(wrong_shift_rows),
-            "l3": sum(float(r["l3"]) for r in wrong_shift_rows) / len(wrong_shift_rows),
-            "l4": sum(float(r["l4"]) for r in wrong_shift_rows) / len(wrong_shift_rows),
+            "a1": sum(float(r["a1"]) for r in wrong_shift_rows) / len(wrong_shift_rows),
+            "a2": sum(float(r["a2"]) for r in wrong_shift_rows) / len(wrong_shift_rows),
+            "a3": sum(float(r["a3"]) for r in wrong_shift_rows) / len(wrong_shift_rows),
+            "a4": sum(float(r["a4"]) for r in wrong_shift_rows) / len(wrong_shift_rows),
         }
         rows.append(avg)
 
@@ -165,10 +165,10 @@ def main() -> int:
         "history_source",
         "ask_mode",
         "overall_acc",
-        "l1",
-        "l2",
-        "l3",
-        "l4",
+        "a1",
+        "a2",
+        "a3",
+        "a4",
         "success",
         "total",
         "run_tag",
@@ -180,14 +180,14 @@ def main() -> int:
             w.writerow(r)
 
     with out_txt.open("w", encoding="utf-8") as f:
-        f.write("History source contrast (FULL only)\n")
+        f.write("History source contrast (Proposed only)\n")
         f.write(f"tmp_histories: {tmp_root}\n\n")
         for r in rows:
             f.write(
                 f"{r['history_source']:10s} {r['ask_mode']:5s} "
                 f"overall={float(r['overall_acc']):.6f} "
-                f"L1={float(r['l1']):.6f} L2={float(r['l2']):.6f} "
-                f"L3={float(r['l3']):.6f} L4={float(r['l4']):.6f} "
+                f"A1={float(r['a1']):.6f} A2={float(r['a2']):.6f} "
+                f"A3={float(r['a3']):.6f} A4={float(r['a4']):.6f} "
                 f"({int(r['success'])}/{int(r['total'])}) "
                 f"run={r['run_tag']}\n"
             )

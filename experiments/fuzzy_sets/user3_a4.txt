@@ -1,0 +1,230 @@
+[  % 1
+open(refrigerator) | open the refrigerator
+inside(microwave_oven, salmon) | put it in the microwave
+closed(refrigerator) | close it
+heated(salmon) | heat it
+on(table, plate) | put it on the table
+on(plate, salmon) | put it on the plate
+has(user, towel) | give me it
+on(couch, newspaper) | put it on the couch
+has(user, candle) | give me it
+filled(teapot, kettle) | fill it from the kettle
+has(user, teapot) | give me it
+inside(dishwasher, plate) | put it in the dishwasher
+inside(dishwasher, teapot) | put it in the dishwasher
+on(table, bowl) | put it on the table
+on(table, bread) | put it on the table
+on(couch, rug) | put it on the couch
+]
+
+[  % 2
+on(table, computer) | put the computer on the table
+has(user, book) | give me it
+on(couch, blanket) | put it on the couch
+has(user, muffin) | give me it
+filled(teapot, kettle) | fill it from the kettle
+has(user, teapot) | give me it
+inside(dishwasher, teapot) | put it in the dishwasher
+filled(cup, kettle) | fill it from the kettle
+has(user, cup) | give me it
+inside(dishwasher, cup) | put it in the dishwasher
+on(table, glass) | put it on the table
+on(table, cake) | put it on the table
+on(table, jar) | put it on the table
+on(table, vase) | put it on the table
+on(table, phone) | put it on the table
+on(table, plant) | put it on the table
+]
+
+[  % 3
+open(refrigerator) | open the refrigerator
+inside(microwave_oven, salmon) | put it in the microwave
+closed(refrigerator) | close it
+heated(salmon) | heat it
+on(table, plate) | put it on the table
+on(plate, salmon) | put it on the plate
+has(user, towel) | give me it
+switched_on(television) | turn on it
+has(user, pillow) | give me it
+filled(teapot, kettle) | fill it from the kettle
+has(user, teapot) | give me it
+inside(dishwasher, plate) | put it in the dishwasher
+inside(dishwasher, teapot) | put it in the dishwasher
+on(table, mug) | put it on the table
+on(table, cake) | put it on the table
+on(table, clock) | put it on the table
+]
+
+[  % 4
+on(table, computer) | put the computer on the table
+has(user, book) | give me it
+on(couch, newspaper) | put it on the couch
+has(user, candle) | give me it
+filled(teapot, kettle) | fill it from the kettle
+has(user, teapot) | give me it
+inside(dishwasher, teapot) | put it in the dishwasher
+filled(cup, kettle) | fill it from the kettle
+has(user, cup) | give me it
+inside(dishwasher, cup) | put it in the dishwasher
+on(table, bread) | put it on the table
+on(table, jar) | put it on the table
+on(table, vase) | put it on the table
+on(table, plant) | put it on the table
+on(table, cookie) | put it on the table
+on(table, bottle) | put it on the table
+]
+
+[  % 5
+open(refrigerator) | open the refrigerator
+inside(microwave_oven, salmon) | put it in the microwave
+closed(refrigerator) | close it
+heated(salmon) | heat it
+on(table, plate) | put it on the table
+on(plate, salmon) | put it on the plate
+has(user, towel) | give me it
+on(couch, blanket) | put it on the couch
+has(user, muffin) | give me it
+filled(teapot, kettle) | fill it from the kettle
+has(user, teapot) | give me it
+inside(dishwasher, plate) | put it in the dishwasher
+inside(dishwasher, teapot) | put it in the dishwasher
+on(table, bowl) | put it on the table
+on(table, bread) | put it on the table
+on(table, vase) | put it on the table
+]
+
+[  % 6
+on(table, computer) | put the computer on the table
+has(user, book) | give me it
+switched_on(television) | turn on it
+has(user, pillow) | give me it
+filled(teapot, kettle) | fill it from the kettle
+has(user, teapot) | give me it
+inside(dishwasher, teapot) | put it in the dishwasher
+filled(cup, kettle) | fill it from the kettle
+has(user, cup) | give me it
+inside(dishwasher, cup) | put it in the dishwasher
+on(table, glass) | put it on the table
+on(table, jar) | put it on the table
+on(table, phone) | put it on the table
+on(table, clock) | put it on the table
+on(table, cookie) | put it on the table
+on(table, mug) | put it on the table
+]
+
+[  % 7
+on(couch, blanket) | put the blanket on the couch
+has(user, muffin) | give me it
+on(couch, newspaper) | put it on the couch
+has(user, candle) | give me it
+filled(teapot, kettle) | fill it from the kettle
+has(user, teapot) | give me it
+inside(dishwasher, teapot) | put it in the dishwasher
+filled(cup, kettle) | fill it from the kettle
+has(user, cup) | give me it
+inside(dishwasher, cup) | put it in the dishwasher
+on(table, bread) | put it on the table
+on(table, bowl) | put it on the table
+on(table, pizza) | put it on the table
+on(table, plant) | put it on the table
+on(couch, rug) | put it on the couch
+on(table, bottle) | put it on the table
+]
+
+[  % 8
+switched_on(television) | turn on the television
+has(user, pillow) | give me it
+on(table, computer) | put it on the table
+has(user, book) | give me it
+filled(teapot, kettle) | fill it from the kettle
+has(user, teapot) | give me it
+inside(dishwasher, teapot) | put it in the dishwasher
+filled(cup, kettle) | fill it from the kettle
+has(user, cup) | give me it
+inside(dishwasher, cup) | put it in the dishwasher
+on(table, glass) | put it on the table
+on(table, cake) | put it on the table
+on(table, jar) | put it on the table
+on(table, phone) | put it on the table
+on(table, vase) | put it on the table
+on(table, thermos) | put it on the table
+]
+
+[  % 9
+filled(teapot, kettle) | fill the teapot from the kettle
+on(couch, pillow) | put it on the couch
+on(couch, blanket) | put it on the couch
+on(couch, rug) | put it on the couch
+on(couch, curtain) | put it on the couch
+has(user, newspaper) | give me it
+has(user, book) | give me it
+has(user, crayon) | give me it
+]
+
+[  % 10
+has(user, plate) | give me the plate
+has(user, bowl) | give me it
+has(user, spoon) | give me it
+on(couch, newspaper) | put it on the couch
+has(user, newspaper) | give me it
+has(user, pencil) | give me it
+on(couch, pillow) | put it on the couch
+]
+
+[  % 11
+open(refrigerator) | open the refrigerator
+inside(microwave_oven, trout) | put it in the microwave
+closed(refrigerator) | close it
+heated(trout) | heat it
+on(table, tray) | put it on the table
+on(tray, trout) | put it on the tray
+has(user, dishrag) | give me it
+on(couch, matchbook) | put it on the couch
+has(user, lantern) | give me it
+filled(coffee_maker, electric_kettle) | fill it from the electric_kettle
+has(user, coffee_maker) | give me it
+inside(dishwasher, tray) | put it in the dishwasher
+inside(dishwasher, coffee_maker) | put it in the dishwasher
+on(table, saltshaker) | put it on the table
+on(table, baguette) | put it on the table
+on(couch, scarf) | put it on the couch
+]
+
+[  % 12
+on(table, calculator) | put the calculator on the table
+has(user, videotape) | give me it
+on(couch, sweater) | put it on the couch
+has(user, pancake) | give me it
+filled(coffee_maker, electric_kettle) | fill it from the electric_kettle
+has(user, coffee_maker) | give me it
+inside(dishwasher, coffee_maker) | put it in the dishwasher
+filled(chalice, electric_kettle) | fill it from the electric_kettle
+has(user, chalice) | give me it
+inside(dishwasher, chalice) | put it in the dishwasher
+on(table, hourglass) | put it on the table
+on(table, cupcake) | put it on the table
+on(table, barrel) | put it on the table
+on(table, fountain) | put it on the table
+on(table, camcorder) | put it on the table
+on(table, vegetable) | put it on the table
+]
+
+[  % 13
+open(refrigerator) | open the refrigerator
+inside(microwave_oven, trout) | put it in the microwave
+closed(refrigerator) | close it
+heated(trout) | heat it
+on(table, tray) | put it on the table
+on(tray, trout) | put it on the tray
+has(user, dishrag) | give me it
+switched_on(projector) | turn on it
+has(user, place_mat) | give me it
+filled(coffee_maker, electric_kettle) | fill it from the electric_kettle
+has(user, coffee_maker) | give me it
+inside(dishwasher, tray) | put it in the dishwasher
+inside(dishwasher, coffee_maker) | put it in the dishwasher
+on(table, ashtray) | put it on the table
+on(table, cupcake) | put it on the table
+on(table, wristwatch) | put it on the table
+]
+

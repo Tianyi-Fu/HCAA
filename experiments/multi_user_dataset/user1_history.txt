@@ -187,3 +187,61 @@ has(user, bottle)               | give me the bottle
 inside(dishwasher, plate)       | put the plate in the dishwasher
 inside(dishwasher, bowl)        | put the bowl in the dishwasher
 ]
+
+[ % 11 twin-of-1; KB: per-clip; dishwasher=shovel,butterknife,ashtray,coffee_maker
+heated(beans)                     | heat the beans
+has(user, dagger)                | give me the dagger
+on(table, tray)                | put the tray on the table
+on(tray, beans)                  | put the beans on the tray
+filled(hourglass, electric_kettle)           | fill the hourglass from the electric_kettle
+has(user, hourglass)                | give me the hourglass
+on(couch, sweater)              | put the sweater on the couch
+has(user, apricot)                | give me the apricot
+on(table, raspberry)                | put the raspberry on the table
+on(table, mango)               | put the mango on the table
+inside(dishwasher, tray)       | put the tray in the dishwasher
+inside(dishwasher, saltshaker)        | put the saltshaker in the dishwasher
+on(couch, videotape)                 | put the videotape on the couch
+switched_on(flashlight)               | turn on the flashlight
+on(couch, place_mat)               | put the place_mat on the couch
+on(couch, scarf)                  | put the scarf on the couch
+]
+
+[ % 12 twin-of-2; KB: per-clip; dishwasher=dagger,butterknife,hourglass,coffee_maker
+on(table, calculator)             | put the calculator on the table
+has(user, paperclip)               | give me the paperclip
+on(couch, videotape)                 | put the videotape on the couch
+switched_on(flashlight)               | turn on the flashlight
+filled(ashtray, electric_kettle)             | fill the ashtray from the electric_kettle
+has(user, ashtray)                  | give me the ashtray
+on(table, raspberry)                | put the raspberry on the table
+on(table, cherry)                | put the cherry on the table
+on(couch, sweater)              | put the sweater on the couch
+has(user, apricot)                | give me the apricot
+on(couch, place_mat)               | put the place_mat on the couch
+on(couch, scarf)                  | put the scarf on the couch
+on(table, clementine)               | put the clementine on the table
+on(table, mango)               | put the mango on the table
+inside(dishwasher, tray)       | put the tray in the dishwasher
+inside(dishwasher, saltshaker)        | put the saltshaker in the dishwasher
+]
+
+[ % 13 twin-of-3; KB: per-clip; dishwasher=shovel,dagger,butterknife,chalice
+switched_on(projector)         | turn on the projector
+has(user, sweater)              | give me the sweater
+filled(thermometer, electric_kettle)         | fill the thermometer from the electric_kettle
+has(user, thermometer)              | give me the thermometer
+on(table, raspberry)                | put the raspberry on the table
+on(table, cherry)                | put the cherry on the table
+on(couch, place_mat)               | put the place_mat on the couch
+on(couch, scarf)                  | put the scarf on the couch
+on(couch, videotape)                 | put the videotape on the couch
+switched_on(flashlight)               | turn on the flashlight
+filled(oil_can, electric_kettle)          | fill the oil_can from the electric_kettle
+has(user, oil_can)               | give me the oil_can
+on(table, clementine)               | put the clementine on the table
+on(table, mango)               | put the mango on the table
+inside(dishwasher, tray)       | put the tray in the dishwasher
+inside(dishwasher, saltshaker)        | put the saltshaker in the dishwasher
+]
+

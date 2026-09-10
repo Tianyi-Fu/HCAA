@@ -1,23 +1,4 @@
-[ % 1 lunch-read ; KB: per-clip; dishwasher=
-on(table, plate)                | put the plate on the table
-open(refrigerator)              | open the refrigerator
-inside(microwave_oven, chicken) | put the chicken in the microwave
-on(table, apple)                | put the apple on the table
-closed(refrigerator)            | close the refrigerator
-heated(chicken)                 | heat the chicken
-on(table, chicken)              | put the chicken on the table
-has(user, bread)                | give me the bread
-on(couch, book)                 | put the book on the couch
-has(user, pencil)               | give me the pencil
-on(table, cookie)               | put the cookie on the table
-on(couch, pillow)               | put the pillow on the couch
-filled(mug, kettle)             | fill the mug from the kettle
-has(user, mug)                  | give me the mug
-inside(dishwasher, plate)       | put the plate in the dishwasher
-inside(dishwasher, mug)         | put the mug in the dishwasher
-]
-
-[ % 2 work-relax ; KB: per-clip; dishwasher=
+[ % 1 work-relax ; KB: per-clip; dishwasher=
 on(table, computer)             | put the computer on the table
 has(user, newspaper)            | give me the newspaper
 on(couch, blanket)              | put the blanket on the couch
@@ -36,7 +17,7 @@ inside(dishwasher, mug)         | put the mug in the dishwasher
 inside(dishwasher, bowl)        | put the bowl in the dishwasher
 ]
 
-[ % 3 tv-read-relax ; KB: per-clip; dishwasher=
+[ % 2 tv-read-relax ; KB: per-clip; dishwasher=
 switched_on(television)         | turn on the television
 has(user, phone)                | give me the phone
 on(couch, book)                 | put the book on the couch
@@ -55,26 +36,7 @@ inside(dishwasher, mug)         | put the mug in the dishwasher
 inside(dishwasher, bowl)        | put the bowl in the dishwasher
 ]
 
-[ % 4 lunch-tv ; KB: per-clip; dishwasher=
-on(table, plate)                | put the plate on the table
-open(refrigerator)              | open the refrigerator
-inside(microwave_oven, chicken) | put the chicken in the microwave
-on(table, banana)               | put the banana on the table
-closed(refrigerator)            | close the refrigerator
-heated(chicken)                 | heat the chicken
-on(table, chicken)              | put the chicken on the table
-has(user, bread)                | give me the bread
-switched_on(television)         | turn on the television
-has(user, phone)                | give me the phone
-on(table, muffin)               | put the muffin on the table
-on(couch, rug)                  | put the rug on the couch
-filled(mug, kettle)             | fill the mug from the kettle
-has(user, mug)                  | give me the mug
-inside(dishwasher, plate)       | put the plate in the dishwasher
-inside(dishwasher, mug)         | put the mug in the dishwasher
-]
-
-[ % 5 work-read ; KB: per-clip; dishwasher=
+[ % 3 work-read ; KB: per-clip; dishwasher=
 on(table, computer)             | put the computer on the table
 has(user, newspaper)            | give me the newspaper
 on(couch, book)                 | put the book on the couch
@@ -93,7 +55,7 @@ inside(dishwasher, mug)         | put the mug in the dishwasher
 inside(dishwasher, bowl)        | put the bowl in the dishwasher
 ]
 
-[ % 6 tv-relax-read ; KB: per-clip; dishwasher=
+[ % 4 tv-relax-read ; KB: per-clip; dishwasher=
 switched_on(television)         | turn on the television
 has(user, phone)                | give me the phone
 on(couch, blanket)              | put the blanket on the couch
@@ -112,7 +74,7 @@ inside(dishwasher, mug)         | put the mug in the dishwasher
 inside(dishwasher, bowl)        | put the bowl in the dishwasher
 ]
 
-[ % 7 supper-relax ; KB: per-clip; dishwasher=
+[ % 5 supper-relax ; KB: per-clip; dishwasher=
 on(table, plate)                | put the plate on the table
 open(refrigerator)              | open the refrigerator
 inside(microwave_oven, chicken) | put the chicken in the microwave
@@ -131,7 +93,7 @@ inside(dishwasher, plate)       | put the plate in the dishwasher
 inside(dishwasher, mug)         | put the mug in the dishwasher
 ]
 
-[ % 8 work-tv ; KB: per-clip; dishwasher=
+[ % 6 work-tv ; KB: per-clip; dishwasher=
 on(table, computer)             | put the computer on the table
 has(user, newspaper)            | give me the newspaper
 switched_on(television)         | turn on the television
@@ -150,7 +112,7 @@ inside(dishwasher, mug)         | put the mug in the dishwasher
 inside(dishwasher, bowl)        | put the bowl in the dishwasher
 ]
 
-[ % 9 relax-read ; KB: per-clip; dishwasher=
+[ % 7 relax-read ; KB: per-clip; dishwasher=
 on(couch, blanket)              | put the blanket on the couch
 has(user, cake)                 | give me the cake
 on(couch, book)                 | put the book on the couch
@@ -169,7 +131,7 @@ inside(dishwasher, mug)         | put the mug in the dishwasher
 inside(dishwasher, bowl)        | put the bowl in the dishwasher
 ]
 
-[ % 10 tv-work-night ; KB: per-clip; dishwasher=
+[ % 8 tv-work-night ; KB: per-clip; dishwasher=
 switched_on(television)         | turn on the television
 has(user, phone)                | give me the phone
 on(table, computer)             | put the computer on the table
@@ -187,3 +149,81 @@ inside(dishwasher, plate)       | put the plate in the dishwasher
 inside(dishwasher, mug)         | put the mug in the dishwasher
 inside(dishwasher, bowl)        | put the bowl in the dishwasher
 ]
+
+[ % 9 fresh ; KB: per-clip; dishwasher=apple,banana,orange
+filled(mug, kettle)             | fill the mug from the kettle
+on(table, peach)                | put the peach on the table
+on(couch, pillow)               | put the pillow on the couch
+on(couch, blanket)              | put the blanket on the couch
+on(couch, rug)                  | put the rug on the couch
+on(couch, towel)                | put the towel on the couch
+has(user, book)                 | give me the book
+]
+
+[ % 10 study ; KB: per-clip; dishwasher=mug,glass,bottle,jar,teapot,thermos
+filled(cup, kettle)             | fill the cup from the kettle
+on(couch, newspaper)            | put the newspaper on the couch
+has(user, newspaper)            | give me the newspaper
+has(user, book)                 | give me the book
+has(user, pencil)               | give me the pencil
+has(user, crayon)               | give me the crayon
+on(couch, pillow)               | put the pillow on the couch
+]
+
+[ % 11 twin-of-1; KB: per-clip; dishwasher=
+on(table, calculator)             | put the calculator on the table
+has(user, matchbook)            | give me the matchbook
+on(couch, sweater)              | put the sweater on the couch
+has(user, cupcake)                 | give me the cupcake
+on(table, tray)                | put the tray on the table
+on(table, scone)               | put the scone on the table
+on(table, pancake)               | put the pancake on the table
+filled(ashtray, electric_kettle)             | fill the ashtray from the electric_kettle
+has(user, ashtray)                  | give me the ashtray
+on(table, saltshaker)                 | put the saltshaker on the table
+on(table, hamburger)                | put the hamburger on the table
+on(couch, scarf)                  | put the scarf on the couch
+on(couch, place_mat)               | put the place_mat on the couch
+inside(dishwasher, tray)       | put the tray in the dishwasher
+inside(dishwasher, ashtray)         | put the ashtray in the dishwasher
+inside(dishwasher, saltshaker)        | put the saltshaker in the dishwasher
+]
+
+[ % 12 twin-of-2; KB: per-clip; dishwasher=
+switched_on(projector)         | turn on the projector
+has(user, camcorder)                | give me the camcorder
+on(couch, videotape)                 | put the videotape on the couch
+has(user, paperclip)               | give me the paperclip
+on(couch, sweater)              | put the sweater on the couch
+has(user, cupcake)                 | give me the cupcake
+on(table, tray)                | put the tray on the table
+on(table, scone)               | put the scone on the table
+on(table, pancake)               | put the pancake on the table
+filled(ashtray, electric_kettle)             | fill the ashtray from the electric_kettle
+has(user, ashtray)                  | give me the ashtray
+on(table, saltshaker)                 | put the saltshaker on the table
+on(table, hamburger)                | put the hamburger on the table
+inside(dishwasher, tray)       | put the tray in the dishwasher
+inside(dishwasher, ashtray)         | put the ashtray in the dishwasher
+inside(dishwasher, saltshaker)        | put the saltshaker in the dishwasher
+]
+
+[ % 13 twin-of-3; KB: per-clip; dishwasher=
+on(table, calculator)             | put the calculator on the table
+has(user, matchbook)            | give me the matchbook
+on(couch, videotape)                 | put the videotape on the couch
+has(user, paperclip)               | give me the paperclip
+on(table, tray)                | put the tray on the table
+on(table, pancake)               | put the pancake on the table
+on(table, hamburger)                | put the hamburger on the table
+filled(ashtray, electric_kettle)             | fill the ashtray from the electric_kettle
+has(user, ashtray)                  | give me the ashtray
+on(table, saltshaker)                 | put the saltshaker on the table
+on(table, scone)               | put the scone on the table
+on(couch, scarf)                  | put the scarf on the couch
+on(couch, tie)              | put the tie on the couch
+inside(dishwasher, tray)       | put the tray in the dishwasher
+inside(dishwasher, ashtray)         | put the ashtray in the dishwasher
+inside(dishwasher, saltshaker)        | put the saltshaker in the dishwasher
+]
+

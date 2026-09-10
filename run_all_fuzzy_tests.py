@@ -260,9 +260,9 @@ def _sthem_mode_for_target(target_name: str, requested_mode: str) -> str:
     if not AUTO_STHEM_BY_LEVEL:
         return mode
     name = str(target_name or '').strip().lower()
-    if '_l1' in name or '_l2' in name:
+    if '_a1' in name or '_a2' in name:
         return 'instruction'
-    if '_l3' in name or '_l4' in name:
+    if '_a3' in name or '_a4' in name:
         return 'both'
     return mode
 
@@ -271,9 +271,9 @@ def _fallback_policy_for_target(target_name: str) -> str:
     if not AUTO_FALLBACK_POLICY_BY_LEVEL:
         return default_policy
     name = str(target_name or '').strip().lower()
-    if '_l1' in name or '_l2' in name:
+    if '_a1' in name or '_a2' in name:
         return str(FORCE_NO_ASK_FALLBACK_POLICY_L1_L2).strip().lower() or default_policy
-    if '_l3' in name or '_l4' in name:
+    if '_a3' in name or '_a4' in name:
         return str(FORCE_NO_ASK_FALLBACK_POLICY_L3_L4).strip().lower() or default_policy
     return default_policy
 
@@ -282,10 +282,10 @@ def _sem_suffix() -> str:
     if m == 'wordnet':
         return ''
     return f'__sem_{m}'
-targets = ['user1_l1.txt', 'user1_l2.txt', 'user1_l3.txt', 'user1_l4.txt', 'user2_l1.txt', 'user2_l2.txt', 'user2_l3.txt', 'user2_l4.txt', 'user3_l1.txt', 'user3_l2.txt', 'user3_l3.txt', 'user3_l4.txt', 'user4_l1.txt', 'user4_l2.txt', 'user4_l3.txt', 'user4_l4.txt', 'user5_l1.txt', 'user5_l2.txt', 'user5_l3.txt', 'user5_l4.txt']
-SINGLE_FILE_NAME = 'user1_l1.txt'
+targets = ['user1_a1.txt', 'user1_a2.txt', 'user1_a3.txt', 'user1_a4.txt', 'user2_a1.txt', 'user2_a2.txt', 'user2_a3.txt', 'user2_a4.txt', 'user3_a1.txt', 'user3_a2.txt', 'user3_a3.txt', 'user3_a4.txt', 'user4_a1.txt', 'user4_a2.txt', 'user4_a3.txt', 'user4_a4.txt', 'user5_a1.txt', 'user5_a2.txt', 'user5_a3.txt', 'user5_a4.txt']
+SINGLE_FILE_NAME = 'user1_a1.txt'
 SINGLE_RESULT_DIR_NAME = None
-SINGLE_FILE_LIST = ['user1_l1.txt', 'user1_l2.txt', 'user1_l3.txt', 'user1_l4.txt']
+SINGLE_FILE_LIST = ['user1_a1.txt', 'user1_a2.txt', 'user1_a3.txt', 'user1_a4.txt']
 DISAMBIG_JSONL = ROOT / 'disambig_results.jsonl'
 DISAMBIG_TXT = ROOT / 'disambig_results.txt'
 RUN_SUMMARY_RECORDS: list[dict] = []
@@ -668,9 +668,9 @@ def summarize_test_results_for_dir(res_dir: Path, tag: str='') -> None:
 def _parse_user_level(target_name: str) -> tuple[str | None, str | None]:
     user_id = _user_id_from_target(target_name)
     level = None
-    m = re.search('_l(\\d+)\\.txt$', target_name)
+    m = re.search('_a(\\d+)\\.txt$', target_name)
     if m:
-        level = f'l{m.group(1)}'
+        level = f'a{m.group(1)}'
     return (user_id, level)
 
 def _load_test_summary(res_dir: Path) -> dict | None:

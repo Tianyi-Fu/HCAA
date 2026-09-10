@@ -16,7 +16,7 @@ def parse_args() -> argparse.Namespace:
     ap = argparse.ArgumentParser()
     ap.add_argument("--run-tag", required=True, help="result folder name under experiments/results")
     ap.add_argument("--entity-id", default="B4", help="baseline id for object-level history")
-    ap.add_argument("--full-id", default="FULL", help="baseline id for full concept method")
+    ap.add_argument("--full-id", default="Proposed", help="baseline id for full concept method")
     ap.add_argument("--out", default="", help="optional output csv path")
     return ap.parse_args()
 
@@ -69,11 +69,11 @@ def _load_method_cases(run_dir: Path, bid: str) -> Dict[Tuple[str, str, int, int
         left = d.name.split("__", 1)[0]
         level = ""
         parts = left.split("_")
-        if parts and parts[-1] in {"l1", "l2", "l3", "l4"}:
+        if parts and parts[-1] in {"a1", "a2", "a3", "a4"}:
             level = parts[-1]
         for r in arr:
             user_id = d.name.split("__", 1)[0]
-            if user_id.endswith("_l1") or user_id.endswith("_l2") or user_id.endswith("_l3") or user_id.endswith("_l4"):
+            if user_id.endswith("_a1") or user_id.endswith("_a2") or user_id.endswith("_a3") or user_id.endswith("_a4"):
                 user_id = "_".join(user_id.split("_")[:-1])
             key = (user_id, level, int(r.get("group", 0)), int(r.get("line", 0)))
             out[key] = r

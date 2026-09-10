@@ -1,0 +1,246 @@
+[ % 1
+heat the egg
+give me the knife
+put the plate on the table
+put the egg on the plate
+fill the glass from the kettle
+give me the glass
+put the blanket on the couch
+give me the peach
+put the apple on the table
+put the banana on the table
+put the plate in the dishwasher
+put the bowl in the dishwasher
+put the book on the couch
+turn on the lamp
+put the pillow on the couch
+put the rug on the couch
+]
+
+[ % 2
+put the computer on the table
+give me the pencil
+put the book on the couch
+turn on the lamp
+fill the mug from the kettle
+give me the mug
+put the apple on the table
+put the grape on the table
+put the blanket on the couch
+give me the peach
+put the pillow on the couch
+put the rug on the couch
+put the orange on the table
+put the banana on the table
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 3
+turn on the television
+give me the blanket
+fill the thermos from the kettle
+give me the thermos
+put the apple on the table
+put the grape on the table
+put the pillow on the couch
+put the rug on the couch
+put the book on the couch
+turn on the lamp
+fill the bottle from the kettle
+give me the bottle
+put the orange on the table
+put the banana on the table
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 4
+put the computer on the table
+give me the pencil
+put the book on the couch
+turn on the lamp
+fill the mug from the kettle
+give me the mug
+put the apple on the table
+put the banana on the table
+put the pillow on the couch
+put the rug on the couch
+put the orange on the table
+put the grape on the table
+fill the bottle from the kettle
+give me the bottle
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 5
+heat the chicken
+give me the fork
+put the plate on the table
+put the chicken on the plate
+fill the glass from the kettle
+give me the glass
+put the blanket on the couch
+give me the peach
+put the orange on the table
+put the grape on the table
+put the plate in the dishwasher
+put the bowl in the dishwasher
+put the pillow on the couch
+put the rug on the couch
+put the apple on the table
+put the banana on the table
+]
+
+[ % 6
+put the book on the couch
+turn on the lamp
+put the blanket on the couch
+give me the peach
+fill the teapot from the kettle
+give me the teapot
+put the apple on the table
+put the grape on the table
+put the pillow on the couch
+put the rug on the couch
+put the orange on the table
+put the banana on the table
+fill the bottle from the kettle
+give me the bottle
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 7
+heat the steak
+give me the spoon
+put the plate on the table
+put the steak on the plate
+fill the teapot from the kettle
+give me the teapot
+put the orange on the table
+put the apple on the table
+put the plate in the dishwasher
+put the bowl in the dishwasher
+put the pillow on the couch
+put the rug on the couch
+put the grape on the table
+put the banana on the table
+fill the bottle from the kettle
+give me the bottle
+]
+
+[ % 8
+put the computer on the table
+give me the pencil
+turn on the television
+give me the blanket
+fill the thermos from the kettle
+give me the thermos
+put the orange on the table
+put the apple on the table
+put the pillow on the couch
+put the rug on the couch
+put the grape on the table
+put the banana on the table
+fill the bottle from the kettle
+give me the bottle
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 9
+turn on the television
+give me the blanket
+fill the bottle from the kettle
+give me the bottle
+put the apple on the table
+put the grape on the table
+put the pillow on the couch
+put the rug on the couch
+fill the jar from the kettle
+give me the jar
+put the orange on the table
+put the banana on the table
+fill the thermos from the kettle
+give me the thermos
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 10
+put the book on the couch
+turn on the lamp
+put the blanket on the couch
+give me the peach
+fill the teapot from the kettle
+give me the teapot
+put the apple on the table
+put the banana on the table
+put the pillow on the couch
+put the rug on the couch
+put the orange on the table
+put the grape on the table
+fill the bottle from the kettle
+give me the bottle
+put the plate in the dishwasher
+put the bowl in the dishwasher
+]
+
+[ % 11
+heat the beans
+give me the sword
+put the tray on the table
+put the beans on the tray
+fill the hourglass from the electric_kettle
+give me the hourglass
+put the sweater on the couch
+give me the apricot
+put the raspberry on the table
+put the mango on the table
+put the tray in the dishwasher
+put the saltshaker in the dishwasher
+put the videotape on the couch
+turn on the flashlight
+put the place_mat on the couch
+put the scarf on the couch
+]
+
+[ % 12
+put the calculator on the table
+give me the paperclip
+put the videotape on the couch
+turn on the flashlight
+fill the ashtray from the electric_kettle
+give me the ashtray
+put the raspberry on the table
+put the cherry on the table
+put the sweater on the couch
+give me the apricot
+put the place_mat on the couch
+put the scarf on the couch
+put the clementine on the table
+put the mango on the table
+put the tray in the dishwasher
+put the saltshaker in the dishwasher
+]
+
+[ % 13
+turn on the projector
+give me the sweater
+fill the thermometer from the electric_kettle
+give me the thermometer
+put the raspberry on the table
+put the cherry on the table
+put the place_mat on the couch
+put the scarf on the couch
+put the videotape on the couch
+turn on the flashlight
+fill the oil_can from the electric_kettle
+give me the oil_can
+put the clementine on the table
+put the mango on the table
+put the tray in the dishwasher
+put the saltshaker in the dishwasher
+]

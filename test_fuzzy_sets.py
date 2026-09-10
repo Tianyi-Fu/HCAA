@@ -21,9 +21,9 @@ clear_context_file()
 parser = argparse.ArgumentParser()
 parser.add_argument(
     "--target",
-    default="user1_l1.txt",
+    default="user1_a1.txt",
     help=(
-        "target filename relative to experiments/fuzzy_sets/ (e.g. user1_l1.txt or "
+        "target filename relative to experiments/fuzzy_sets/ (e.g. user1_a1.txt or "
         "user2_round1_hypernym.txt)"
     ),
 )
@@ -86,9 +86,9 @@ if not TARGET_PATH.exists():
     sys.stderr.write(f"[ERROR] not found: {TARGET_PATH}\n")
     sys.exit(1)
 
-m_level = re.search(r"_l(\d+)\.txt$", TARGET_FILE)
+m_level = re.search(r"_a(\d+)\.txt$", TARGET_FILE)
 if m_level:
-    TARGET_TYPE = f"l{m_level.group(1)}"
+    TARGET_TYPE = f"a{m_level.group(1)}"
 elif "hypernym" in TARGET_FILE:
     TARGET_TYPE = "hypernym"
 elif "pronoun" in TARGET_FILE:
@@ -116,7 +116,7 @@ init_group_logs(str(RES_DIR), reset=True)
 
 m_user = re.match(r"^(.+)_round(\d+)_", TARGET_FILE)
 if not m_user:
-    m_user = re.match(r"^(.+)_l\d+\.txt$", TARGET_FILE)
+    m_user = re.match(r"^(.+)_a\d+\.txt$", TARGET_FILE)
 user_id = m_user.group(1) if m_user else None
 
 ext_active = os.environ.get("ACTIVE_HISTORY_FILE", "").strip()
@@ -388,7 +388,7 @@ results: list[dict] = []
 m_round = re.search(r"round(\d+)_", file_path.name)
 if m_round:
     round_num = int(m_round.group(1))
-elif re.search(r"_l\d+\.txt$", file_path.name):
+elif re.search(r"_a\d+\.txt$", file_path.name):
     round_num = 0
 else:
     print(f"[WARN] cannot infer round number from filename (file={file_path.name}), round_num set to 0.")

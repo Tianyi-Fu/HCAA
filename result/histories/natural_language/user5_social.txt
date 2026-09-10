@@ -1,0 +1,228 @@
+[ % 1
+put the computer on the table
+give me the mug
+put the blanket on the couch
+give me the pizza
+put the plate on the table
+put the cookie on the table
+put the bread on the table
+put the jar on the table
+fill the cup from the kettle
+give me the cup
+fill the thermos from the kettle
+give me the thermos
+put the plate in the dishwasher
+put the cup in the dishwasher
+put the thermos in the dishwasher
+put the rug on the couch
+]
+
+[ % 2
+turn on the television
+give me the bowl
+put the newspaper on the couch
+give me the glass
+put the blanket on the couch
+give me the pizza
+put the plate on the table
+put the cookie on the table
+put the cake on the table
+fill the cup from the kettle
+give me the cup
+fill the thermos from the kettle
+give me the thermos
+put the plate in the dishwasher
+put the cup in the dishwasher
+put the thermos in the dishwasher
+]
+
+[ % 3
+put the computer on the table
+give me the mug
+put the newspaper on the couch
+give me the glass
+put the plate on the table
+put the cake on the table
+put the muffin on the table
+put the bottle on the table
+fill the cup from the kettle
+give me the cup
+fill the thermos from the kettle
+give me the thermos
+put the plate in the dishwasher
+put the cup in the dishwasher
+put the thermos in the dishwasher
+put the pillow on the couch
+]
+
+[ % 4
+turn on the television
+give me the bowl
+put the blanket on the couch
+give me the pizza
+put the newspaper on the couch
+give me the glass
+put the plate on the table
+put the bread on the table
+put the bottle on the table
+fill the cup from the kettle
+give me the cup
+fill the thermos from the kettle
+give me the thermos
+put the plate in the dishwasher
+put the cup in the dishwasher
+put the thermos in the dishwasher
+]
+
+[ % 5
+put the plate on the table
+open the refrigerator
+put the steak in the microwave
+put the orange on the table
+close the refrigerator
+heat the steak
+put the steak on the table
+give me the basket
+put the blanket on the couch
+give me the pizza
+put the muffin on the table
+put the pillow on the couch
+fill the cup from the kettle
+give me the cup
+put the plate in the dishwasher
+put the cup in the dishwasher
+]
+
+[ % 6
+put the computer on the table
+give me the mug
+turn on the television
+give me the bowl
+put the plate on the table
+put the bread on the table
+put the jar on the table
+put the cookie on the table
+fill the cup from the kettle
+give me the cup
+fill the thermos from the kettle
+give me the thermos
+put the plate in the dishwasher
+put the cup in the dishwasher
+put the thermos in the dishwasher
+put the rug on the couch
+]
+
+[ % 7
+put the blanket on the couch
+give me the pizza
+put the newspaper on the couch
+give me the glass
+put the plate on the table
+put the muffin on the table
+put the cake on the table
+put the bread on the table
+fill the cup from the kettle
+give me the cup
+fill the thermos from the kettle
+give me the thermos
+put the plate in the dishwasher
+put the cup in the dishwasher
+put the thermos in the dishwasher
+put the pillow on the couch
+]
+
+[ % 8
+turn on the television
+give me the bowl
+put the computer on the table
+give me the mug
+put the plate on the table
+put the jar on the table
+put the bottle on the table
+put the muffin on the table
+fill the cup from the kettle
+give me the cup
+fill the thermos from the kettle
+give me the thermos
+put the plate in the dishwasher
+put the cup in the dishwasher
+put the thermos in the dishwasher
+put the rug on the couch
+]
+
+[ % 9
+fill the mug from the kettle
+put the peach on the table
+put the pillow on the couch
+put the blanket on the couch
+put the rug on the couch
+put the towel on the couch
+give me the newspaper
+]
+
+[ % 10
+fill the teapot from the kettle
+put the newspaper on the couch
+give me the newspaper
+give me the pencil
+put the pillow on the couch
+put the blanket on the couch
+give me the plate
+]
+
+[ % 11
+put the calculator on the table
+give me the ashtray
+put the sweater on the couch
+give me the hamburger
+put the tray on the table
+put the scone on the table
+put the baguette on the table
+put the barrel on the table
+fill the chalice from the electric_kettle
+give me the chalice
+fill the thermometer from the electric_kettle
+give me the thermometer
+put the tray in the dishwasher
+put the chalice in the dishwasher
+put the thermometer in the dishwasher
+put the scarf on the couch
+]
+
+[ % 12
+turn on the projector
+give me the saltshaker
+put the matchbook on the couch
+give me the hourglass
+put the sweater on the couch
+give me the hamburger
+put the tray on the table
+put the scone on the table
+put the cupcake on the table
+fill the chalice from the electric_kettle
+give me the chalice
+fill the thermometer from the electric_kettle
+give me the thermometer
+put the tray in the dishwasher
+put the chalice in the dishwasher
+put the thermometer in the dishwasher
+]
+
+[ % 13
+put the calculator on the table
+give me the ashtray
+put the matchbook on the couch
+give me the hourglass
+put the tray on the table
+put the cupcake on the table
+put the pancake on the table
+put the oil_can on the table
+fill the chalice from the electric_kettle
+give me the chalice
+fill the thermometer from the electric_kettle
+give me the thermometer
+put the tray in the dishwasher
+put the chalice in the dishwasher
+put the thermometer in the dishwasher
+put the place_mat on the couch
+]

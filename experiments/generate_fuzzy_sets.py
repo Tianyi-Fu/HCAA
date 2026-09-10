@@ -327,10 +327,10 @@ def fuzzy_attribute(nl: str) -> str:
 
 
 LEVELS = [
-    ("l1", "hypernym_l1"),
-    ("l2", "hypernym_l2"),
-    ("l3", "hypernym_top"),
-    ("l4", "pronoun"),
+    ("a1", "hypernym_l1"),
+    ("a2", "hypernym_l2"),
+    ("a3", "hypernym_top"),
+    ("a4", "pronoun"),
 ]
 
 L2_AVOID_ITEM_USERS = {"user4"}

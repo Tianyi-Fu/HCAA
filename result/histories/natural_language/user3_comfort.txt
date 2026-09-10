@@ -1,0 +1,229 @@
+[ % 1
+open the refrigerator
+put the salmon in the microwave
+close the refrigerator
+heat the salmon
+put the plate on the table
+put the salmon on the plate
+give me the towel
+put the newspaper on the couch
+give me the candle
+fill the teapot from the kettle
+give me the teapot
+put the plate in the dishwasher
+put the teapot in the dishwasher
+put the bowl on the table
+put the bread on the table
+put the rug on the couch
+]
+
+[ % 2
+put the computer on the table
+give me the book
+put the blanket on the couch
+give me the muffin
+fill the teapot from the kettle
+give me the teapot
+put the teapot in the dishwasher
+fill the cup from the kettle
+give me the cup
+put the cup in the dishwasher
+put the glass on the table
+put the cake on the table
+put the jar on the table
+put the vase on the table
+put the phone on the table
+put the plant on the table
+]
+
+[ % 3
+open the refrigerator
+put the salmon in the microwave
+close the refrigerator
+heat the salmon
+put the plate on the table
+put the salmon on the plate
+give me the towel
+turn on the television
+give me the pillow
+fill the teapot from the kettle
+give me the teapot
+put the plate in the dishwasher
+put the teapot in the dishwasher
+put the mug on the table
+put the cake on the table
+put the clock on the table
+]
+
+[ % 4
+put the computer on the table
+give me the book
+put the newspaper on the couch
+give me the candle
+fill the teapot from the kettle
+give me the teapot
+put the teapot in the dishwasher
+fill the cup from the kettle
+give me the cup
+put the cup in the dishwasher
+put the bread on the table
+put the jar on the table
+put the vase on the table
+put the plant on the table
+put the cookie on the table
+put the bottle on the table
+]
+
+[ % 5
+open the refrigerator
+put the salmon in the microwave
+close the refrigerator
+heat the salmon
+put the plate on the table
+put the salmon on the plate
+give me the towel
+put the blanket on the couch
+give me the muffin
+fill the teapot from the kettle
+give me the teapot
+put the plate in the dishwasher
+put the teapot in the dishwasher
+put the bowl on the table
+put the bread on the table
+put the vase on the table
+]
+
+[ % 6
+put the computer on the table
+give me the book
+turn on the television
+give me the pillow
+fill the teapot from the kettle
+give me the teapot
+put the teapot in the dishwasher
+fill the cup from the kettle
+give me the cup
+put the cup in the dishwasher
+put the glass on the table
+put the jar on the table
+put the phone on the table
+put the clock on the table
+put the cookie on the table
+put the mug on the table
+]
+
+[ % 7
+put the blanket on the couch
+give me the muffin
+put the newspaper on the couch
+give me the candle
+fill the teapot from the kettle
+give me the teapot
+put the teapot in the dishwasher
+fill the cup from the kettle
+give me the cup
+put the cup in the dishwasher
+put the bread on the table
+put the bowl on the table
+put the pizza on the table
+put the plant on the table
+put the rug on the couch
+put the bottle on the table
+]
+
+[ % 8
+turn on the television
+give me the pillow
+put the computer on the table
+give me the book
+fill the teapot from the kettle
+give me the teapot
+put the teapot in the dishwasher
+fill the cup from the kettle
+give me the cup
+put the cup in the dishwasher
+put the glass on the table
+put the cake on the table
+put the jar on the table
+put the phone on the table
+put the vase on the table
+put the thermos on the table
+]
+
+[ % 9
+fill the teapot from the kettle
+put the pillow on the couch
+put the blanket on the couch
+put the rug on the couch
+put the curtain on the couch
+give me the newspaper
+give me the book
+give me the crayon
+]
+
+[ % 10
+give me the plate
+give me the bowl
+give me the spoon
+put the newspaper on the couch
+give me the newspaper
+give me the pencil
+put the pillow on the couch
+]
+
+[ % 11
+open the refrigerator
+put the trout in the microwave
+close the refrigerator
+heat the trout
+put the tray on the table
+put the trout on the tray
+give me the dishrag
+put the matchbook on the couch
+give me the lantern
+fill the coffee_maker from the electric_kettle
+give me the coffee_maker
+put the tray in the dishwasher
+put the coffee_maker in the dishwasher
+put the saltshaker on the table
+put the baguette on the table
+put the scarf on the couch
+]
+
+[ % 12
+put the calculator on the table
+give me the videotape
+put the sweater on the couch
+give me the pancake
+fill the coffee_maker from the electric_kettle
+give me the coffee_maker
+put the coffee_maker in the dishwasher
+fill the chalice from the electric_kettle
+give me the chalice
+put the chalice in the dishwasher
+put the hourglass on the table
+put the cupcake on the table
+put the barrel on the table
+put the fountain on the table
+put the camcorder on the table
+put the vegetable on the table
+]
+
+[ % 13
+open the refrigerator
+put the trout in the microwave
+close the refrigerator
+heat the trout
+put the tray on the table
+put the trout on the tray
+give me the dishrag
+turn on the projector
+give me the place_mat
+fill the coffee_maker from the electric_kettle
+give me the coffee_maker
+put the tray in the dishwasher
+put the coffee_maker in the dishwasher
+put the ashtray on the table
+put the cupcake on the table
+put the wristwatch on the table
+]

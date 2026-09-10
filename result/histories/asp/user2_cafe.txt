@@ -1,0 +1,224 @@
+[ % 1
+on(couch, newspaper) |
+has(user, newspaper) |
+filled(mug, kettle) |
+has(user, mug) |
+on(table, muffin) |
+has(user, muffin) |
+open(refrigerator) |
+closed(refrigerator) |
+filled(cup, kettle) |
+has(user, cup) |
+on(table, apple) |
+has(user, apple) |
+inside(dishwasher, mug) |
+inside(dishwasher, cup) |
+on(couch, pillow) |
+on(table, banana) |
+]
+
+[ % 2
+on(table, computer) |
+has(user, phone) |
+filled(cup, kettle) |
+has(user, cup) |
+on(couch, newspaper) |
+has(user, newspaper) |
+filled(thermos, kettle) |
+has(user, thermos) |
+on(table, cookie) |
+has(user, cookie) |
+has(user, glass) |
+inside(dishwasher, cup) |
+inside(dishwasher, thermos) |
+on(couch, pillow) |
+on(table, grape) |
+has(user, grape) |
+]
+
+[ % 3
+on(couch, newspaper) |
+has(user, newspaper) |
+filled(mug, kettle) |
+has(user, mug) |
+on(table, cake) |
+has(user, cake) |
+filled(teapot, kettle) |
+has(user, teapot) |
+on(table, muffin) |
+has(user, muffin) |
+inside(dishwasher, mug) |
+inside(dishwasher, teapot) |
+on(couch, pillow) |
+on(couch, rug) |
+on(table, orange) |
+has(user, orange) |
+]
+
+[ % 4
+on(table, computer) |
+has(user, phone) |
+filled(thermos, kettle) |
+has(user, thermos) |
+on(couch, newspaper) |
+has(user, newspaper) |
+filled(cup, kettle) |
+has(user, cup) |
+on(table, cookie) |
+has(user, cookie) |
+has(user, jar) |
+inside(dishwasher, thermos) |
+inside(dishwasher, cup) |
+on(couch, pillow) |
+on(table, banana) |
+has(user, banana) |
+]
+
+[ % 5
+on(couch, newspaper) |
+has(user, newspaper) |
+filled(mug, kettle) |
+has(user, mug) |
+on(table, muffin) |
+has(user, muffin) |
+open(refrigerator) |
+closed(refrigerator) |
+filled(cup, kettle) |
+has(user, cup) |
+on(table, cookie) |
+has(user, cookie) |
+inside(dishwasher, mug) |
+inside(dishwasher, cup) |
+on(couch, pillow) |
+on(table, apple) |
+]
+
+[ % 6
+on(couch, newspaper) |
+has(user, newspaper) |
+filled(thermos, kettle) |
+has(user, thermos) |
+on(table, cake) |
+has(user, cake) |
+filled(mug, kettle) |
+has(user, mug) |
+has(user, bottle) |
+on(table, muffin) |
+inside(dishwasher, thermos) |
+inside(dishwasher, mug) |
+on(couch, pillow) |
+on(couch, rug) |
+on(table, grape) |
+has(user, grape) |
+]
+
+[ % 7
+on(table, computer) |
+has(user, phone) |
+filled(mug, kettle) |
+has(user, mug) |
+on(couch, newspaper) |
+has(user, newspaper) |
+filled(thermos, kettle) |
+has(user, thermos) |
+on(table, cookie) |
+has(user, cookie) |
+inside(dishwasher, mug) |
+inside(dishwasher, thermos) |
+on(couch, pillow) |
+on(table, orange) |
+has(user, orange) |
+on(couch, rug) |
+]
+
+[ % 8
+on(couch, newspaper) |
+has(user, newspaper) |
+filled(thermos, kettle) |
+has(user, thermos) |
+on(table, cake) |
+has(user, cake) |
+filled(cup, kettle) |
+has(user, cup) |
+on(table, cookie) |
+has(user, cookie) |
+inside(dishwasher, thermos) |
+inside(dishwasher, cup) |
+on(couch, pillow) |
+on(table, grape) |
+has(user, grape) |
+on(couch, rug) |
+]
+
+[ % 9
+has(user, newspaper) |
+filled(chalice, kettle) |
+on(couch, pillow) |
+on(table, apple) |
+has(user, apple) |
+]
+
+[ % 10
+filled(mug, kettle) |
+on(table, doughnut) |
+has(user, mug) |
+on(couch, pillow) |
+has(user, newspaper) |
+]
+
+[ % 11
+on(couch, matchbook) |
+has(user, matchbook) |
+filled(ashtray, electric_kettle) |
+has(user, ashtray) |
+on(table, pancake) |
+has(user, pancake) |
+open(refrigerator) |
+closed(refrigerator) |
+filled(chalice, electric_kettle) |
+has(user, chalice) |
+on(table, raspberry) |
+has(user, raspberry) |
+inside(dishwasher, ashtray) |
+inside(dishwasher, chalice) |
+on(couch, place_mat) |
+on(table, mango) |
+]
+
+[ % 12
+on(table, calculator) |
+has(user, camcorder) |
+filled(chalice, electric_kettle) |
+has(user, chalice) |
+on(couch, matchbook) |
+has(user, matchbook) |
+filled(thermometer, electric_kettle) |
+has(user, thermometer) |
+on(table, scone) |
+has(user, scone) |
+has(user, hourglass) |
+inside(dishwasher, chalice) |
+inside(dishwasher, thermometer) |
+on(couch, place_mat) |
+on(table, cherry) |
+has(user, cherry) |
+]
+
+[ % 13
+on(couch, matchbook) |
+has(user, matchbook) |
+filled(ashtray, electric_kettle) |
+has(user, ashtray) |
+on(table, cupcake) |
+has(user, cupcake) |
+filled(coffee_maker, electric_kettle) |
+has(user, coffee_maker) |
+on(table, pancake) |
+has(user, pancake) |
+inside(dishwasher, ashtray) |
+inside(dishwasher, coffee_maker) |
+on(couch, place_mat) |
+on(couch, scarf) |
+on(table, clementine) |
+has(user, clementine) |
+]

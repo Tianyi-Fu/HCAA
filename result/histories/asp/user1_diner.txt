@@ -1,0 +1,246 @@
+[ % 1
+heated(egg) |
+has(user, knife) |
+on(table, plate) |
+on(plate, egg) |
+filled(glass, kettle) |
+has(user, glass) |
+on(couch, blanket) |
+has(user, peach) |
+on(table, apple) |
+on(table, banana) |
+inside(dishwasher, plate) |
+inside(dishwasher, bowl) |
+on(couch, book) |
+switched_on(lamp) |
+on(couch, pillow) |
+on(couch, rug) |
+]
+
+[ % 2
+on(table, computer) |
+has(user, pencil) |
+on(couch, book) |
+switched_on(lamp) |
+filled(mug, kettle) |
+has(user, mug) |
+on(table, apple) |
+on(table, grape) |
+on(couch, blanket) |
+has(user, peach) |
+on(couch, pillow) |
+on(couch, rug) |
+on(table, orange) |
+on(table, banana) |
+inside(dishwasher, plate) |
+inside(dishwasher, bowl) |
+]
+
+[ % 3
+switched_on(television) |
+has(user, blanket) |
+filled(thermos, kettle) |
+has(user, thermos) |
+on(table, apple) |
+on(table, grape) |
+on(couch, pillow) |
+on(couch, rug) |
+on(couch, book) |
+switched_on(lamp) |
+filled(bottle, kettle) |
+has(user, bottle) |
+on(table, orange) |
+on(table, banana) |
+inside(dishwasher, plate) |
+inside(dishwasher, bowl) |
+]
+
+[ % 4
+on(table, computer) |
+has(user, pencil) |
+on(couch, book) |
+switched_on(lamp) |
+filled(mug, kettle) |
+has(user, mug) |
+on(table, apple) |
+on(table, banana) |
+on(couch, pillow) |
+on(couch, rug) |
+on(table, orange) |
+on(table, grape) |
+filled(bottle, kettle) |
+has(user, bottle) |
+inside(dishwasher, plate) |
+inside(dishwasher, bowl) |
+]
+
+[ % 5
+heated(chicken) |
+has(user, fork) |
+on(table, plate) |
+on(plate, chicken) |
+filled(glass, kettle) |
+has(user, glass) |
+on(couch, blanket) |
+has(user, peach) |
+on(table, orange) |
+on(table, grape) |
+inside(dishwasher, plate) |
+inside(dishwasher, bowl) |
+on(couch, pillow) |
+on(couch, rug) |
+on(table, apple) |
+on(table, banana) |
+]
+
+[ % 6
+on(couch, book) |
+switched_on(lamp) |
+on(couch, blanket) |
+has(user, peach) |
+filled(teapot, kettle) |
+has(user, teapot) |
+on(table, apple) |
+on(table, grape) |
+on(couch, pillow) |
+on(couch, rug) |
+on(table, orange) |
+on(table, banana) |
+filled(bottle, kettle) |
+has(user, bottle) |
+inside(dishwasher, plate) |
+inside(dishwasher, bowl) |
+]
+
+[ % 7
+heated(steak) |
+has(user, spoon) |
+on(table, plate) |
+on(plate, steak) |
+filled(teapot, kettle) |
+has(user, teapot) |
+on(table, orange) |
+on(table, apple) |
+inside(dishwasher, plate) |
+inside(dishwasher, bowl) |
+on(couch, pillow) |
+on(couch, rug) |
+on(table, grape) |
+on(table, banana) |
+filled(bottle, kettle) |
+has(user, bottle) |
+]
+
+[ % 8
+on(table, computer) |
+has(user, pencil) |
+switched_on(television) |
+has(user, blanket) |
+filled(thermos, kettle) |
+has(user, thermos) |
+on(table, orange) |
+on(table, apple) |
+on(couch, pillow) |
+on(couch, rug) |
+on(table, grape) |
+on(table, banana) |
+filled(bottle, kettle) |
+has(user, bottle) |
+inside(dishwasher, plate) |
+inside(dishwasher, bowl) |
+]
+
+[ % 9
+switched_on(television) |
+has(user, blanket) |
+filled(bottle, kettle) |
+has(user, bottle) |
+on(table, apple) |
+on(table, grape) |
+on(couch, pillow) |
+on(couch, rug) |
+filled(jar, kettle) |
+has(user, jar) |
+on(table, orange) |
+on(table, banana) |
+filled(thermos, kettle) |
+has(user, thermos) |
+inside(dishwasher, plate) |
+inside(dishwasher, bowl) |
+]
+
+[ % 10
+on(couch, book) |
+switched_on(lamp) |
+on(couch, blanket) |
+has(user, peach) |
+filled(teapot, kettle) |
+has(user, teapot) |
+on(table, apple) |
+on(table, banana) |
+on(couch, pillow) |
+on(couch, rug) |
+on(table, orange) |
+on(table, grape) |
+filled(bottle, kettle) |
+has(user, bottle) |
+inside(dishwasher, plate) |
+inside(dishwasher, bowl) |
+]
+
+[ % 11
+heated(beans) |
+has(user, sword) |
+on(table, tray) |
+on(tray, beans) |
+filled(hourglass, electric_kettle) |
+has(user, hourglass) |
+on(couch, sweater) |
+has(user, apricot) |
+on(table, raspberry) |
+on(table, mango) |
+inside(dishwasher, tray) |
+inside(dishwasher, saltshaker) |
+on(couch, videotape) |
+switched_on(flashlight) |
+on(couch, place_mat) |
+on(couch, scarf) |
+]
+
+[ % 12
+on(table, calculator) |
+has(user, paperclip) |
+on(couch, videotape) |
+switched_on(flashlight) |
+filled(ashtray, electric_kettle) |
+has(user, ashtray) |
+on(table, raspberry) |
+on(table, cherry) |
+on(couch, sweater) |
+has(user, apricot) |
+on(couch, place_mat) |
+on(couch, scarf) |
+on(table, clementine) |
+on(table, mango) |
+inside(dishwasher, tray) |
+inside(dishwasher, saltshaker) |
+]
+
+[ % 13
+switched_on(projector) |
+has(user, sweater) |
+filled(thermometer, electric_kettle) |
+has(user, thermometer) |
+on(table, raspberry) |
+on(table, cherry) |
+on(couch, place_mat) |
+on(couch, scarf) |
+on(couch, videotape) |
+switched_on(flashlight) |
+filled(oil_can, electric_kettle) |
+has(user, oil_can) |
+on(table, clementine) |
+on(table, mango) |
+inside(dishwasher, tray) |
+inside(dishwasher, saltshaker) |
+]

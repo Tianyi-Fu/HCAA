@@ -10,6 +10,8 @@ from commands.kg_utils          import (
     is_on_furn    as _is_on_furn,
 )
 from commands.wordnet_utils     import top_k_scores as _top3_scores
+from kg.loader import get_graph
+from rdflib import RDF, RDFS
 from nltk.corpus import wordnet as wn
 
 from experiments.generate_fuzzy_sets import (
@@ -26,6 +28,15 @@ HYPER_FURN_MAP = {
     "container_furniture": CONTAINER_FURN,
     "furniture"        : ALL_FURN,
 }
+
+def _present_names() -> set:
+    g = get_graph()
+    return {
+        str(s).rsplit("/", 1)[-1]
+        for s, _, o in g.triples((None, RDF.type, None))
+        if o != RDFS.Class
+    }
+
 
 def analyse_command_en(sentence: str) -> Dict[str, Any]:
     has_obj_placeholder = "__obj__" in sentence.lower()
@@ -83,6 +94,11 @@ def analyse_command_en(sentence: str) -> Dict[str, Any]:
             mapped = [k for k, v in OBJ_HYPERNYM_MAP.items() if v == n_lower]
             if (not obj["members"]) or (len(set(obj["members"])) < len(mapped)):
                 obj["members"] = mapped
+    if obj["status"] in {"class", "subclass"} and obj["members"]:
+        present = _present_names()
+        kept = [m for m in obj["members"] if m in present]
+        if kept:
+            obj["members"] = kept
 
     if obj["status"] == "missing" and mods:
         obj = resolve_name(obj_ph.split()[-1])
